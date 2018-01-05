@@ -47,20 +47,22 @@
                         <div class="collapse navbar-collapse" id="mainMenu">
                             <ul class="nav navbar-nav">
                                 <li class=" dropdown">
-                                    <a href="index.html" >home</a>
+                                  <%= link_to "home", root_path%>
                                 </li>
-                                <li ><a href="about.html">About</a></li>
-                                <li class="dropdown">
-                                    <a href="services.html" >services</a>
+                                <li >
+                                  <%= link_to "About", abouts_index_path%>
                                 </li>
                                 <li class="dropdown">
-                                    <a href="package-details.html" >Packages</a>
+                                  <%= link_to "services", services_index_path%>
+                                </li>
+                                <li class="dropdown">
+                                  <%= link_to "Packages", packages_index_path%>
                                 </li>
                                 <li>
-                                    <a href="pricing.html">Pricing</a>
+                                  <%= link_to "Pricing", prices_index_path%>
                                 </li>
                                 <li class="dropdown">
-                                    <a href="contact.html" >Contact</a>
+                                  <%= link_to "Contact", contacts_index_path%>
                                 </li>
                             </ul>
                         </div>
