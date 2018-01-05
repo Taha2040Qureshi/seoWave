@@ -12,4 +12,17 @@
  *
  *= require_tree .
  *= require_self
- */
+ *= bootstrap.min.css
+ *= bootstrap-theme.min.css
+ *= font-awesome.min.css
+ *= owl.carousel.min.css
+ *= owl.theme.default.min.css
+ *= flexslider.css
+ *= bootstrap-select.min.css
+ *= settings.css
+ *= settings-ie8.css
+ *= style.css
+ *= responsive.css
+ *= home.scss
+ *= owl.video.play.html
+*/
