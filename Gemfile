@@ -31,7 +31,7 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-#gem added by clickNconstruct Developers
+#gem added by seowave Developers
 gem 'devise'
 
 group :development, :test do
