@@ -34,6 +34,7 @@ gem 'jbuilder', '~> 2.5'
 #gem added by seowave Developers
 # ===============================================
 gem 'devise'
+gem 'activeadmin'
 gem 'carrierwave', '~> 1.0'
 #================================================
 
