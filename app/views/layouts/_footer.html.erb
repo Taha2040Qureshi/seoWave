@@ -35,7 +35,6 @@
         </div> <!--Single widget-->
         <div class="col-sm-4 footer_widget">
           <div class="row m0">
-            <img src="images/PingLogo.png">
             <div class="row m0 body">
               <!-- Begin MailChimp Signup Form -->
               <div id="mc_embed_signup" class="row m0">
@@ -50,17 +49,20 @@
         <ul class="nav nav-justified">
           <li>
             <a href="#">
-              <img src="images/icons/footer/call.png" alt=""><strong>Call</strong>: +(61) 123 456 7890
+               <%= image_tag("icons/footer/call.png", alt: "") %>
+               <strong>Call</strong>: +(61) 123 456 7890
             </a>
           </li>
           <li>
             <a href="#">
-              <img src="images/icons/footer/mail.png" alt=""><strong>Email</strong>: Example@domain.com
+               <%= image_tag("icons/footer/mail.png", alt: "") %>
+               <strong>Email</strong>: Example@domain.com
             </a>
           </li>
           <li>
             <a href="#">
-              <img src="images/icons/footer/fax.png" alt=""><strong>Fax</strong>: +(61) 123 456 7890
+               <%= image_tag("icons/footer/fax.png", alt: "") %>
+               <strong>Fax</strong>: +(61) 123 456 7890
             </a>
           </li>
         </ul>

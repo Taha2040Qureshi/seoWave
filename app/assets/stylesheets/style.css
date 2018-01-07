@@ -27,7 +27,7 @@
  14. Sidebar
  15. Blog
  16. Case
- 18. Successive Processes 
+ 18. Successive Processes
  19. Marketing App
  20. Tweets
  21. Slider
@@ -171,7 +171,7 @@ a:focus, .btn:focus, button:focus, a:hover, .btn:hover, button:hover {
 .dot270 {
 	height: 270px;
 	margin: 0;
-	background: url('../../images/dot-pattern.png') repeat scroll 0 0;
+	background: url('dot-pattern.png') repeat scroll 0 0;
 	position: relative;
 	z-index: -1;
 	margin-top: -83px;
@@ -264,13 +264,13 @@ body.default header .logo_row .nav li a .icon {
 	border-right: 1px solid #ebeef0;
 }
 body.default header .logo_row .nav li a .icon.phone {
-	background-image: url('../../images/icons/menu/phone-c.png');
+	background-image: url('icons/menu/phone-c.png');
 }
 body.default header .logo_row .nav li a .icon.email {
-	background-image: url('../../images/icons/menu/email-c.png');
+	background-image: url('icons/menu/email-c.png');
 }
 body.default header .logo_row .nav li a .icon.share {
-	background-image: url('../../images/icons/menu/share.png');
+	background-image: url('icons/menu/share.png');
 	margin-right: 0;
 	border: none;
 }
@@ -401,20 +401,20 @@ body.default header .menu_row .search_form_area .free_analysis {
 	color: #fff;
 	font-family: 'Montserrat', sans-serif;
 	text-transform: uppercase;
-} 
+}
 body.default header .nav .open>a, .nav .open>a:hover, .nav .open>a:focus{
 	background:rgba(255,255,255,0.1);
 }
 body.default header .menu_row .search_form_area .free_analysis img {
 	margin-right: 5px;
-} 
+}
 body.default header .menu_row .dropdown:hover .dropdown-menu {
 	display: block;
 }
 /*----------------------------------------------------------------*/
 /*Home Banner*/
 body.default .home_banner {
-	background: url('../../images/slider-pattern.png') repeat scroll 0 0 transparent;
+	background: url('slider-pattern.png') repeat scroll 0 0 transparent;
 	position: relative;
 }
 body.default .home_banner .banner_inner {
@@ -422,7 +422,7 @@ body.default .home_banner .banner_inner {
 }
 .trial30_banner {
 	height: 227px;
-	background: url('../../images/banners/banner.jpg') no-repeat scroll center top #65a76b;
+	background: url('banners/banner.jpg') no-repeat scroll center top #65a76b;
 	padding-top: 60px;
 	color: #fff;
 }
@@ -521,7 +521,7 @@ body.default .home_banner .banner_inner {
 }
 .service_box .preview_box {
 	height: 100%;
-	background: url('../../images/dot-pattern.png') repeat scroll 0 0 #ffffff;
+	background: url('dot-pattern.png') repeat scroll 0 0 #ffffff;
 	margin: 0;
 }
 .service_box .preview_box img {
@@ -539,7 +539,7 @@ body.default .home_banner .banner_inner {
 	font-weight: bold;
 }
 .service_box .hover_box {
-	background: url('../../images/dot-pattern.png') repeat scroll 0 0 #ffffff;
+	background: url('dot-pattern.png') repeat scroll 0 0 #ffffff;
 	position: absolute;
 	top: 2px;
 	bottom: 2px;
@@ -623,7 +623,7 @@ body.default .home_banner .banner_inner {
 }
 .discover_services .heading_secs {
 	margin: 2px 0;
-	background: url('../../images/dot-pattern.png') repeat scroll 0 0 #ffffff;
+	background: url('dot-pattern.png') repeat scroll 0 0 #ffffff;
 	float: none;
 	display: table-cell;
 	padding: 90px 60px 0 85px;
@@ -886,7 +886,7 @@ body.default .home_banner .banner_inner {
 }
 /*----------------------------------------------------------------*/
 footer .top_footer {
-	background: url('../../images/footer-map.png') no-repeat scroll center top #2a2f36;
+	background: url('footer-map.png') no-repeat scroll center top #2a2f36;
 }
 footer .top_footer .footer_widgets {
 	padding: 80px 0;
@@ -1107,7 +1107,7 @@ footer .copyright a {
 }
 /*----------------------------------------------------------------*/
 .pageCover {
-	background: url('../../images/page-cover.jpg') no-repeat scroll center top #22262c;
+	background: url('page-cover.jpg') no-repeat scroll center top #22262c;
 	text-transform: uppercase;
 	padding: 128px 0;
 }
@@ -1216,7 +1216,7 @@ input[type="radio"] {
 }
 input[type="radio"] + label {
 	padding-left: 25px;
-	background: url('../../images/checkout/radio1.png') no-repeat scroll left center transparent;
+	background: url('checkout/radio1.png') no-repeat scroll left center transparent;
 	text-transform: uppercase;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 11px;
@@ -1225,7 +1225,7 @@ input[type="radio"] + label {
 }
 input[type="radio"]:checked + label {
 	padding-left: 25px;
-	background-image: url('../../images/checkout/radio2.png');
+	background-image: url('checkout/radio2.png');
 }
 .checkout_details {
 	margin: 0 -7.5px;
@@ -1425,7 +1425,7 @@ input[type="radio"]:checked + label {
 	padding-left: 25px;
 }
 .package .inner {
-	background: url('../../images/dot-pattern.png') repeat scroll 0 0 transparent;
+	background: url('dot-pattern.png') repeat scroll 0 0 transparent;
 	margin: 0;
 	padding: 50px 70px;
 	position: relative;
@@ -1498,7 +1498,7 @@ input[type="radio"]:checked + label {
 	margin-bottom: 80px;
 }
 .detailsRow .package_cover .row {
-	background: url('../../images/dot-pattern.png') repeat scroll 0 0 transparent;
+	background: url('dot-pattern.png') repeat scroll 0 0 transparent;
 	text-align: center;
 	padding: 55px 0;
 	margin-right: 0;
@@ -1622,7 +1622,7 @@ input[type="radio"]:checked + label {
 	border-right: 1px solid #ebeef0;
 }
 .detailsRow .package_details .links a.share_btn .icon.share {
-	background-image: url('../../images/icons/menu/share.png');
+	background-image: url('icons/menu/share.png');
 	margin-right: 0;
 	border: none;
 }
@@ -2030,13 +2030,13 @@ input[type="radio"]:checked + label {
 	width: 25px;
 	height: 60px;
 	display: inline-block;
-	background: url('../../images/icons/about/plus.png') no-repeat scroll 0 center;
+	background: url('icons/about/plus.png') no-repeat scroll 0 center;
 }
 .about_company .panel-group .panel .panel-heading h4 a[aria-expanded="true"] {
 	border-bottom: 2px solid #27ae61;
 }
 .about_company .panel-group .panel .panel-heading h4 a[aria-expanded="true"] .sign {
-	background-image: url('../../images/icons/about/minus.png');
+	background-image: url('icons/about/minus.png');
 }
 .about_company .panel-group .panel .panel-collapse .panel-body {
 	border-top: 0;
@@ -2049,7 +2049,7 @@ input[type="radio"]:checked + label {
 	border-top: none;
 }
 .funfacts_ab {
-	background: url('../../images/icons/about/facts.png') no-repeat scroll center 0 transparent;
+	background: url('icons/about/facts.png') no-repeat scroll center 0 transparent;
 	height: 335px;
 	padding-top: 90px;
 }
@@ -2147,7 +2147,7 @@ input[type="radio"]:checked + label {
 	transform: scale(1, 1);
 }
 .our_clients {
-	background: url('../../images/dot-pattern.png') repeat scroll 0 0;
+	background: url('dot-pattern.png') repeat scroll 0 0;
 	padding: 90px 0;
 }
 .our_clients h2 {
@@ -2587,7 +2587,7 @@ input[type="radio"]:checked + label {
 	height: 52px;
 	margin-right: 22px;
 	content: '';
-	background: url('../../images/icons/blog/quote.png') no-repeat scroll right 5px transparent;
+	background: url('icons/blog/quote.png') no-repeat scroll right 5px transparent;
 }
 .shares {
 	margin-bottom: 25px;
@@ -2619,7 +2619,7 @@ input[type="radio"]:checked + label {
 	border-bottom: 1px solid #ddd;
 	height: 70px;
 	padding: 22px 0;
-	background: url('../../images/three-dot.png') no-repeat scroll center center;
+	background: url('three-dot.png') no-repeat scroll center center;
 	border: none;
 }
 .paginations.case_study_detail_pagination {
@@ -3039,7 +3039,7 @@ input[type="radio"]:checked + label {
 }
 .ready_to_work {
 	height: 227px;
-	background: url('../../images/banners/banner.jpg') no-repeat scroll center top #65a76b;
+	background: url('banners/banner.jpg') no-repeat scroll center top #65a76b;
 	padding-top: 60px;
 	color: #fff;
 	text-align: center;
@@ -3066,7 +3066,7 @@ input[type="radio"]:checked + label {
 	border-bottom: 1px solid #e8e8e8;
 }
 .successive_process .successive_process_inner {
-	background: url('../../images/successive.png') no-repeat scroll center 0;
+	background: url('successive.png') no-repeat scroll center 0;
 	padding-top: 50px;
 	margin-bottom: 50px;
 }
@@ -3081,7 +3081,7 @@ input[type="radio"]:checked + label {
 	color: #232323;
 }
 .successive_process .successive_process_inner .process .dot_circle {
-	background: url('../../images/process/dotted.png') no-repeat scroll 0 0;
+	background: url('process/dotted.png') no-repeat scroll 0 0;
 	background-size: cover;
 	padding: 15px;
 	border-radius: 100%;
@@ -3119,7 +3119,7 @@ input[type="radio"]:checked + label {
 	transition: all 300ms ease-in-out 0s;
 }
 .successive_process .successive_process_inner .process:hover .dot_circle {
-	background-image: url('../../images/process/dotted-hover.png');
+	background-image: url('process/dotted-hover.png');
 }
 .successive_process .successive_process_inner .process:hover .dot_circle .icon_circle img {
 	opacity: 0.05;
@@ -3130,7 +3130,7 @@ input[type="radio"]:checked + label {
 /*----------------------------------------------------------------*/
 .marketing_app {
 	color: #FFF;
-	background: url('../../images/digital-app-marketing.png') no-repeat scroll center top;
+	background: url('digital-app-marketing.png') no-repeat scroll center top;
 	padding-top: 97px;
 }
 .marketing_app .page_title {
@@ -3167,7 +3167,7 @@ input[type="radio"]:checked + label {
 /*----------------------------------------------------------------*/
 .tweets {
 	height: 414px;
-	background: url('../../images/testimonial_bg.png') no-repeat scroll center top;
+	background: url('testimonial_bg.png') no-repeat scroll center top;
 }
 .tweets .container {
 	max-width: 810px;
@@ -3236,7 +3236,7 @@ input[type="radio"]:checked + label {
 	width: 100%;
 	position: relative;
 	padding: 0;
-	background: url('../../images/slider-pattern.png') repeat scroll 0 0 transparent;
+	background: url('slider-pattern.png') repeat scroll 0 0 transparent;
 	overflow: hidden;
 }
 .bannercontainer .preloader {
@@ -3379,7 +3379,7 @@ input[type="radio"]:checked + label {
 	height: 650px;
 	position: relative;
 	padding-top: 40px;
-	background: url('../../images/slider/plane.png') no-repeat scroll 15px top transparent;
+	background: url('slider/plane.png') no-repeat scroll 15px top transparent;
 	top: 100px;
 	left: 620px;
 }
@@ -3596,7 +3596,7 @@ input[type="radio"]:checked + label {
 	width:100%;
 	display:inline-block;
 	overflow:hidden;
-	background:url(../../images/slider-pattern.png) repeat;
+	background:url(slider-pattern.png) repeat;
 }
 
 .home-slider .borderred_link{
@@ -3656,6 +3656,6 @@ input[type="radio"]:checked + label {
 }
 .tp-leftarrow.default{
 	display: none;
-	
+
 }
 /*----------------------------------------------------------------*/
