@@ -12,23 +12,25 @@
 //
 //= require rails-ujs
 //= require turbolinks
-//= require_tree .
-//= require jquery-2.1.3.min.js
-//= require bootstrap.min.js
-//= require owl.carousel.min.js
-//= require bootstrap-select.min.js
-//= require jquery.flexslider-min.js
-//= require jquery.counterup.min.js
-//= require jquery.themepunch.tools.min.js
-//= require jquery.themepunch.revolution.min.js
-//= require mc-validate.js
-//= require theme.js
-//= require revs.js
-//= require jquery.form.js
-//= require jquery.validate.min.js
-//= require cable.js
-//= require contact.js
-//= require google-map.js
+//= require jquery-2.1.3.min
+//= require bootstrap.min
+//= require owl.carousel.min
+//= require bootstrap-select.min
+//= require jquery.flexslider-min
+//= require jquery.counterup.min
+//= require waypoints.min
+//= require jquery.themepunch.tools.min
+//= require jquery.themepunch.revolution.min
+//= require mc-validate
+//= require custom
+//= require theme
+//= require revs
+//= require jquery.form
+//= require jquery.validate.min
+//= require cable
+//= require contact
+//= require google-map
+//= require isotope-custom
 //= require home.coffee
-//= require isotope-custom.js
-//= require waypoints.min.js
+
+

@@ -10,19 +10,15 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
- *= require_tree .
- *= require_self
- *= bootstrap.min.css
- *= bootstrap-theme.min.css
- *= font-awesome.min.css
- *= owl.carousel.min.css
- *= owl.theme.default.min.css
- *= flexslider.css
- *= bootstrap-select.min.css
- *= settings.css
- *= settings-ie8.css
- *= style.css
- *= responsive.css
- *= home.scss
- *= owl.video.play.html
+ *= require bootstrap.min.css
+ *= require bootstrap-theme.min.css
+ *= require font-awesome.min.css
+ *= require owl.carousel.min.css
+ *= require owl.theme.default.min.css
+ *= require flexslider.css
+ *= require bootstrap-select.min.css
+ *= require settings.css
+ *= require settings-ie8.css
+ *= require style.css
+ *= require responsive.css
 */
