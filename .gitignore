@@ -25,4 +25,8 @@
 # Ignore ruby-gemset
 .ruby-gemset
 
+# Ignore Byebug command history file.
 .byebug_history
+
+public/uploads/*
+
