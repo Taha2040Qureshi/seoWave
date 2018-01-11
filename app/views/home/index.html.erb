@@ -480,48 +480,22 @@
 <section class="row contentRow">
     <div class="container">
         <div class="row">
+          <% @goals.each do |g| %>
             <div class="col-sm-4 feature_cols">
                 <div class="media feature_col">
                     <div class="media-left">
                         <a href="#">
-                         <%= image_tag("icons/features/1.png", alt: "") %>
+                         <%= image_tag(g.avatar.url, alt: "") %>
                         </a>
                     </div>
                     <div class="media-body">
-                        <h5>your revenue goals</h5>
-                        <p>Abore et dolore magna aliqua enim daga minim veniam quis nostrud.</p>
+                        <h5><%= g.heading%></h5>
+                        <p><%= g.text%></p>
                         <a href="#" class="learn_more">learn more</a>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-4 feature_cols">
-                <div class="media feature_col">
-                    <div class="media-left">
-                        <a href="#">
-                            <%= image_tag("icons/features/2.png", alt: "") %>
-                        </a>
-                    </div>
-                    <div class="media-body">
-                        <h5>your branding goals</h5>
-                        <p>Abore et dolore magna aliqua enim daga minim veniam quis nostrud.</p>
-                        <a href="#" class="learn_more">learn more</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-4 feature_cols">
-                <div class="media feature_col">
-                    <div class="media-left">
-                        <a href="#">
-                            <%= image_tag("icons/features/3.png", alt: "") %>
-                        </a>
-                    </div>
-                    <div class="media-body">
-                        <h5>your digital assets</h5>
-                        <p>Abore et dolore magna aliqua enim daga minim veniam quis nostrud.</p>
-                        <a href="#" class="learn_more">learn more</a>
-                    </div>
-                </div>
-            </div>
+          <%end%>
         </div>
     </div>
 </section>
@@ -539,99 +513,26 @@
                         Media Optimization.
                     </h5>
                     <p class="about">voluptas sit aspernatur aut odit aut fugit, sed quias consequuntur magni dolores eos qui ratione volust  luptatem sequi nesciunt. Neque porro quisquam est qui dolorem ipsum quiala.</p>
-                    <a href="#" class="subscribe_btn btn">get a free quote</a>
+                    <a href="#" class="subscribe_btn btn">Services</a>
                 </div>
                 <div class="media-body services_secs col-sm-7 col-md-9">
-                    <div class="col-sm-4 service_box">
-                        <div class="row service_box_inner">
-                            <div class="row preview_box">
-                               <%= image_tag("icons/services/1.png", alt: "") %>
-                                <h6>Seo Services</h6>
-                            </div>
-                            <div class="row hover_box">
-                                <div class="row m0 inner">
-                                    <h6>Seo Services</h6>
-                                    <div class="about"> Duis aute irure dolor in reprehenderit voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.</div>
-                                    <a href="services-details.html" class="read_more">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4 service_box">
-                        <div class="row service_box_inner">
-                            <div class="row preview_box">
-                                <%= image_tag("icons/services/2.png", alt: "") %>
-                                <h6>Pay Per Click</h6>
-                            </div>
-                            <div class="row hover_box">
-                                <div class="row m0 inner">
-                                    <h6>Seo Services</h6>
-                                    <div class="about"> Duis aute irure dolor in reprehenderit voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.</div>
-                                    <a href="services-details.html" class="read_more">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4 service_box">
-                        <div class="row service_box_inner">
-                            <div class="row preview_box">
-                                <%= image_tag("icons/services/3.png", alt: "") %>
-                                <h6>Social Media</h6>
-                            </div>
-                            <div class="row hover_box">
-                                <div class="row m0 inner">
-                                    <h6>Seo Services</h6>
-                                    <div class="about"> Duis aute irure dolor in reprehenderit voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.</div>
-                                    <a href="services-details.html" class="read_more">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4 service_box">
-                        <div class="row service_box_inner">
-                            <div class="row preview_box">
-                                <%= image_tag("icons/services/4.png", alt: "") %>
-                                <h6>Web Development</h6>
-                            </div>
-                            <div class="row hover_box">
-                                <div class="row m0 inner">
-                                    <h6>Web Development</h6>
-                                    <div class="about"> Duis aute irure dolor in reprehenderit voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.</div>
-                                    <a href="services-details.html" class="read_more">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4 service_box">
-                        <div class="row service_box_inner">
-                            <div class="row preview_box">
-                                <%= image_tag("icons/services/5.png", alt: "") %>
-                                <h6>Email Marketing</h6>
-                            </div>
-                            <div class="row hover_box">
-                                <div class="row m0 inner">
-                                    <h6>Email Marketing</h6>
-                                    <div class="about"> Duis aute irure dolor in reprehenderit voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.</div>
-                                    <a href="services-details.html" class="read_more">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4 service_box">
-                        <div class="row service_box_inner">
-                            <div class="row preview_box">
-                                <%= image_tag("icons/services/6.png", alt: "") %>
-                                <h6>Content Management</h6>
-                            </div>
-                            <div class="row hover_box">
-                                <div class="row m0 inner">
-                                    <h6>Content Management</h6>
-                                    <div class="about"> Duis aute irure dolor in reprehenderit voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.</div>
-                                    <a href="services-details.html" class="read_more">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <% @services.each do |s| %>
+                         <div class="col-sm-4 service_box">
+                             <div class="row service_box_inner">
+                                 <div class="row preview_box">
+                                    <%= image_tag(s.avatar.url, alt: "") %>
+                                     <h6>Seo Services</h6>
+                                 </div>
+                                 <div class="row hover_box">
+                                     <div class="row m0 inner">
+                                         <h6><%= s.heading %></h6>
+                                         <div class="about"><%= s.text %></div>
+                                         <a href="services-details.html" class="read_more">Read More</a>
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+                    <% end %>
                 </div>
             </div>
         </div>
@@ -665,14 +566,14 @@
                             Afordable pricing offers.
                         </li>
                     </ul>
-                    <div class="row m0"> <a href="#" class="learn_more borderred_link fleft"><span>Learn More</span></a> <a href="#mc_embed_signup" class="borderred_link fleft quote_btn"><span>get a quote</span></a> </div>
+                    <div class="row m0"> </div>
                 </div>
                 <div class="col-sm-6">
                     <div class="owl-carousel offer_service_carousel">
-                        <%= image_tag("about/2.png", alt: "", class: "item") %>
-                        <%= image_tag("about/1.png", alt: "", class: "item") %>
-                        <%= image_tag("about/2.png", alt: "", class: "item") %>
-                        <%= image_tag("about/1.png", alt: "", class: "item") %>
+                       <div class="item"> <%= image_tag("about/2.png", alt: "", ) %></div>
+                       <div class="item"> <%= image_tag("about/1.png", alt: "", ) %></div>
+                       <div class="item"> <%= image_tag("about/2.png", alt: "", ) %></div>
+                       <div class="item"> <%= image_tag("about/1.png", alt: "", ) %></div>
                     </div>
                 </div>
             </div>
@@ -715,8 +616,8 @@
     <div class="row m0 successive_process contentRow">
         <div class="container">
             <div class="row title_row">
-                <h2>Affordable SEO Services Packages</h2>
-                <h5>Choose from affordable SEO services packages &amp; get the best results in return</h5>
+                <h2>Affordable  It  Packages</h2>
+                <h5>Choose from affordable IT services packages &amp; get the best results in return</h5>
             </div>
         </div>
         <div class="row m0 successive_process_inner">
@@ -726,10 +627,7 @@
                         <div class="dot_circle row m0">
                             <div class="icon_circle row m0">
                                 <%= image_tag("process/1.png", alt: "") %>
-                                <div class="row m0 hover_texts">
-                                    Smart Ideas <br>
-                                    Steady Growth
-                                </div>
+
                             </div>
                         </div>
                         <div class="row m0">1. people</div>
@@ -738,10 +636,7 @@
                         <div class="dot_circle row m0">
                             <div class="icon_circle row m0">
                                 <%= image_tag("process/2.png", alt: "") %>
-                                <div class="row m0 hover_texts">
-                                    Smart Ideas <br>
-                                    Steady Growth
-                                </div>
+
                             </div>
                         </div>
                         <div class="row m0">2. objective</div>
@@ -750,10 +645,7 @@
                         <div class="dot_circle row m0">
                             <div class="icon_circle row m0">
                                 <%= image_tag("process/3.png", alt: "") %>
-                                <div class="row m0 hover_texts">
-                                    Smart Ideas <br>
-                                    Steady Growth
-                                </div>
+
                             </div>
                         </div>
                         <div class="row m0">3. strategy</div>
@@ -762,10 +654,7 @@
                         <div class="dot_circle row m0">
                             <div class="icon_circle row m0">
                                 <%= image_tag("process/4.png", alt: "") %>
-                                <div class="row m0 hover_texts">
-                                    Smart Ideas <br>
-                                    Steady Growth
-                                </div>
+
                             </div>
                         </div>
                         <div class="row m0">4. technology</div>
@@ -774,10 +663,7 @@
                         <div class="dot_circle row m0">
                             <div class="icon_circle row m0">
                                 <%= image_tag("process/5.png", alt: "") %>
-                                <div class="row m0 hover_texts">
-                                    Smart Ideas <br>
-                                    Steady Growth
-                                </div>
+
                             </div>
                         </div>
                         <div class="row m0">5. analytics</div>
@@ -786,11 +672,10 @@
             </div>
         </div>
         <div class="container">
-            <div class="row text-center"> <a href="#" class="borderred_link quote_btn"><span class="lh45">get started now!</span></a> </div>
+            <div class="row text-center"> <a href="#" class="borderred_link quote_btn"><span class="lh45">Contact us!</span></a> </div>
         </div>
     </div>
-
-    <div class="row m0 testimonials contentRow">
+     <div class="row m0 testimonials contentRow">
         <div class="container">
             <div class="row">
                 <div class="row m0 title_row">
@@ -798,42 +683,12 @@
                     <h5>voluptatem accusantium doloremque laudantium totam aperiam</h5>
                 </div>
                 <div class="row m0">
-                    <div class="col-sm-6 testimonial">
-                        <div class="media">
-                            <div class="media-left">
-                                <a href="#">
-                                    <%= image_tag("about/clients/c1.jpg", alt: "") %>
-                                </a>
-                            </div>
-                            <div class="media-body">
-                                <div class="inner row m0">
-                                    <div class="blockquote">Laudantium, totam rem aperi, eaque ipsa quaea ab illo invente veritatis et quasi architecto sach beatae vitae dicta sunt explicab.</div>
-                                    <div class="row m0 review"> <i class="fa fa-star-o starred"></i> <i class="fa fa-star-o starred"></i> <i class="fa fa-star-o starred"></i> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> </div>
-                                    <div class="row m0 identity">Auro Navanth <span class="pos">(CEO of Clsscio)</span></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 testimonial">
-                        <div class="media">
-                            <div class="media-left">
-                                <a href="#">
-                                    <%= image_tag("about/clients/c2.jpg", alt: "") %>
-                                </a>
-                            </div>
-                            <div class="media-body">
-                                <div class="inner row m0">
-                                    <div class="blockquote">Laudantium, totam rem aperi, eaque ipsa quaea ab illo invente veritatis et quasi architecto sach beatae vitae dicta sunt explicab.</div>
-                                    <div class="row m0 review"> <i class="fa fa-star-o starred"></i> <i class="fa fa-star-o starred"></i> <i class="fa fa-star-o starred"></i> <i class="fa fa-star-o starred"></i> <i class="fa fa-star-o"></i> </div>
-                                    <div class="row m0 identity">steaven Amith <span class="pos">(Co founder of Aft)</span></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                    <%= render partial: "layouts/our_team" ,:collection => @teams, :as => :t%>
+               </div>
             </div>
         </div>
     </div>
+
     <div class="row m0 our_clients">
         <div class="container">
             <div class="row">
@@ -846,16 +701,16 @@
                 <div class="col-sm-9">
                     <div class="row">
                         <div class="owl-carousel clients_carousel">
-                            <%= image_tag("about/clients/1.png", alt: "", class: "item") %>
-                            <%= image_tag("about/clients/2.png", alt: "", class: "item") %>
-                            <%= image_tag("about/clients/3.png", alt: "", class: "item") %>
-                            <%= image_tag("about/clients/4.png", alt: "", class: "item") %>
-                            <%= image_tag("about/clients/1.png", alt: "", class: "item") %>
-                            <%= image_tag("about/clients/1.png", alt: "", class: "item") %>
-                            <%= image_tag("about/clients/2.png", alt: "", class: "item") %>
-                            <%= image_tag("about/clients/3.png", alt: "", class: "item") %>
-                            <%= image_tag("about/clients/4.png", alt: "", class: "item") %>
-                            <%= image_tag("about/clients/1.png", alt: "", class: "item") %>
+                           <div class="item"> <%= image_tag("about/clients/1.png", alt: "",) %></div>
+                           <div class="item"> <%= image_tag("about/clients/2.png", alt: "", class:'item') %></div>
+                            <div class="item"><%= image_tag("about/clients/3.png", alt: "", class:"item") %></div>
+                            <div class="item"><%= image_tag("about/clients/4.png", alt: "", class:"item") %></div>
+                            <div class="item"><%= image_tag("about/clients/1.png", alt: "", class:"item") %></div>
+                            <div class="item"><%= image_tag("about/clients/1.png", alt: "", class:"item") %></div>
+                            <div class="item"><%= image_tag("about/clients/2.png", alt: "", class:"item") %></div>
+                            <div class="item"><%= image_tag("about/clients/3.png", alt: "", class:"item") %></div>
+                            <div class="item"><%= image_tag("about/clients/4.png", alt: "", class:"item") %></div>
+                            <div class="item"><%= image_tag("about/clients/1.png", alt: "", class:"item") %></div>
                         </div>
                     </div>
                 </div>
@@ -863,189 +718,8 @@
         </div>
     </div>
 </section>
-<section class="row">
-    <div class="row m0 page_packages page_pricing contentRow">
-        <div class="container">
-            <div class="row title_row">
-                <h2>Affordable SEO Services Packages</h2>
-                <h5>Choose from affordable SEO services packages &amp; get the best results in return</h5>
-            </div>
-            <div class="row pricingTab">
-                <ul class="nav nav-tabs" role="tablist" id="pricingTab">
-                    <li role="presentation" class="active"><a href="#monthly" aria-controls="monthly" role="tab" data-toggle="tab">monthly</a></li>
-                    <li role="presentation"><a href="#yearly" aria-controls="yearly" role="tab" data-toggle="tab">yearly</a></li>
-                </ul>
-                <div class="tab-content">
-                    <div role="tabpanel" class="tab-pane active" id="monthly">
-                        <div class="col-sm-4 pricing_table">
-                            <div class="row m0 inner">
-                                <h4 class="pricing_title">Basic</h4>
-                                <div class="row m0 pricing_price">
-                                    <div class="row m0 round_box">
-                                        <div class="price_inner">
-                                            <span class="price">$59</span><br>
-                                            Per month
-                                        </div>
-                                    </div>
-                                </div>
-                                <ul class="list-unstyled feature row m0">
-                                    <li class="fa fa-check-circle">26 Keyword</li>
-                                    <li class="fa fa-times-circle">No Time Tracking</li>
-                                    <li class="fa fa-check-circle">240 - Man Hour</li>
-                                    <li class="fa fa-times-circle">News Letter Available</li>
-                                </ul>
-                                <a href="#" class="purchase_btn">purchase</a>
-                            </div>
-                        </div>
-                        <div class="col-sm-4 pricing_table standard">
-                            <div class="row m0 inner">
-                                <h4 class="pricing_title">Standard</h4>
-                                <div class="row m0 pricing_price">
-                                    <div class="row m0 round_box">
-                                        <div class="price_inner">
-                                            <span class="price">$79</span><br>
-                                            Per month
-                                        </div>
-                                        <span class="offer">-20%</span>
-                                    </div>
-                                </div>
-                                <ul class="list-unstyled feature row m0">
-                                    <li class="fa fa-check-circle">90 Keyword</li>
-                                    <li class="fa fa-check-circle">No Time Tracking</li>
-                                    <li class="fa fa-check-circle">800 - Man Hour</li>
-                                    <li class="fa fa-check-circle">News Letter Available</li>
-                                </ul>
-                                <a href="#" class="purchase_btn">purchase</a>
-                            </div>
-                        </div>
-                        <div class="col-sm-4 pricing_table">
-                            <div class="row m0 inner">
-                                <h4 class="pricing_title">Ultimate</h4>
-                                <div class="row m0 pricing_price">
-                                    <div class="row m0 round_box">
-                                        <div class="price_inner">
-                                            <span class="price">$99</span><br>
-                                            Per month
-                                        </div>
-                                    </div>
-                                </div>
-                                <ul class="list-unstyled feature row m0">
-                                    <li class="fa fa-check-circle">45 Keyword</li>
-                                    <li class="fa fa-check-circle">No Time Tracking</li>
-                                    <li class="fa fa-check-circle">500 - Man Hour</li>
-                                    <li class="fa fa-times-circle">News Letter Available</li>
-                                </ul>
-                                <a href="#" class="purchase_btn">purchase</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div role="tabpanel" class="tab-pane" id="yearly">
-                        <div class="col-sm-4 pricing_table">
-                            <div class="row m0 inner">
-                                <h4 class="pricing_title">Basic</h4>
-                                <div class="row m0 pricing_price">
-                                    <div class="row m0 round_box">
-                                        <div class="price_inner">
-                                            <span class="price">$499</span><br>
-                                            Per year
-                                        </div>
-                                    </div>
-                                </div>
-                                <ul class="list-unstyled feature row m0">
-                                    <li class="fa fa-check-circle">26 Keyword</li>
-                                    <li class="fa fa-times-circle">No Time Tracking</li>
-                                    <li class="fa fa-check-circle">240 - Man Hour</li>
-                                    <li class="fa fa-times-circle">News Letter Available</li>
-                                </ul>
-                                <a href="#" class="purchase_btn">purchase</a>
-                            </div>
-                        </div>
-                        <div class="col-sm-4 pricing_table standard">
-                            <div class="row m0 inner">
-                                <h4 class="pricing_title">Standard</h4>
-                                <div class="row m0 pricing_price">
-                                    <div class="row m0 round_box">
-                                        <div class="price_inner">
-                                            <span class="price">$699</span><br>
-                                            Per year
-                                        </div>
-                                        <span class="offer">-20%</span>
-                                    </div>
-                                </div>
-                                <ul class="list-unstyled feature row m0">
-                                    <li class="fa fa-check-circle">90 Keyword</li>
-                                    <li class="fa fa-check-circle">No Time Tracking</li>
-                                    <li class="fa fa-check-circle">800 - Man Hour</li>
-                                    <li class="fa fa-check-circle">News Letter Available</li>
-                                </ul>
-                                <a href="#" class="purchase_btn">purchase</a>
-                            </div>
-                        </div>
-                        <div class="col-sm-4 pricing_table">
-                            <div class="row m0 inner">
-                                <h4 class="pricing_title">Ultimate</h4>
-                                <div class="row m0 pricing_price">
-                                    <div class="row m0 round_box">
-                                        <div class="price_inner">
-                                            <span class="price">$849</span><br>
-                                            Per year
-                                        </div>
-                                    </div>
-                                </div>
-                                <ul class="list-unstyled feature row m0">
-                                    <li class="fa fa-check-circle">45 Keyword</li>
-                                    <li class="fa fa-check-circle">No Time Tracking</li>
-                                    <li class="fa fa-check-circle">500 - Man Hour</li>
-                                    <li class="fa fa-times-circle">News Letter Available</li>
-                                </ul>
-                                <a href="#" class="purchase_btn">purchase</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="row marketing_app">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-7">
-                <div class="row">
-                    <h2 class="page_title white_c">Digital Marketing App on Your Mobile!</h2>
-                    <p>Save the most every time! get offer notifications with our popular Browser App and save on the go with our awesome Mobile App! it’s Available on the App store and Google Play. Use it Everywhere!</p>
-                    <ul class="nav">
-                        <li>
-                            <%= image_tag("icons/app/1.png", alt: "") %>
-                            24H Support
-                        </li>
-                        <li>
-                            <%= image_tag("icons/app/2.png", alt: "") %>
-                            Track your progress
-                        </li>
-                        <li>
-                            <%= image_tag("icons/app/3.png", alt: "") %>
-                            analyze your data
-                    </li>
-                    </ul>
-                    <div class="row m0 download_links">
-                        <a href="#">
-                            <%= image_tag("icons/app/4.png", alt: "") %>
-                        </a>
-                        <a href="#">
-                            <%= image_tag("icons/app/5.png", alt: "") %>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-4 col-sm-offset-1">
-                <div class="row">
-                    <%= image_tag("iphone.png", alt: "", class: "img-responsive") %>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+
+
 </body>
 
 

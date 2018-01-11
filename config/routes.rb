@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   
+  get 'teams/index'
+
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   get 'contacts/index'

@@ -11,5 +11,5 @@ ActiveAdmin.register Goal do
 #   permitted << :other if params[:action] == 'create' && current_user.admin?
 #   permitted
 # end
-  permit_params :heading, :text
+  permit_params :heading, :text, :avatar
 end

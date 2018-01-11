@@ -23,12 +23,12 @@
             <h4 class="title">Pages</h4>
             <div class="row m0 body">
               <ul class="list-unstyled links">
-                <li class="fa fa-caret-right"> <a href="index.html">Home</a></li>
-                <li class="fa fa-caret-right"><a href="about.html">About</a></li>
-                <li class="fa fa-caret-right"> <a href="services.html">Services</a></li>
-                <li class="fa fa-caret-right"><a href="package-details.html">Packages</a></li>
-                <li class="fa fa-caret-right"><a href="pricing.html">Pricing</a></li>
-                <li class="fa fa-caret-right"><a href="contact.html">Contact</a> </li>
+                <li class="fa fa-caret-right"> <%= link_to "home", root_path%></li>
+                <li class="fa fa-caret-right"> <%= link_to "About", abouts_index_path%></li>
+                <li class="fa fa-caret-right">  <%= link_to "services", services_index_path%></li>
+                <li class="fa fa-caret-right"><%= link_to "Partners", packages_index_path%></li>
+                <li class="fa fa-caret-right"> <%= link_to "Team", prices_index_path%></li>
+                <li class="fa fa-caret-right">  <%= link_to "Contact", contacts_index_path%></li>
               </ul>
             </div>
           </div>
