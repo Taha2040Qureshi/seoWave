@@ -59,14 +59,14 @@
                                         <span class="icon">
                                             <%= image_tag("icons/about/1.png", alt: "") %>
                                         </span>
-                                        Awards &amp; Recognition
+                                            <%=@abouts.first.heading%>
                                         <span class="sign"></span>
                                     </a>
                                 </h4>
                             </div>
                             <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
                                 <div class="panel-body">
-                                    Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consect adipo sci velit, sed quia non numquam eius modi temora incidlabore etum dolore tha magnam aliquam quaerat voluptatem. Ut enim ad minima venia quius nostrum sak exercitationem ullam corporis suscipit. laboriosam, nisi ut aliquid ex ea commodi consequatur
+                                    <%=@abouts.first.text%>
                                 </div>
                             </div>
                         </div> <!--Panel-->
@@ -77,14 +77,14 @@
                                         <span class="icon">
                                             <%= image_tag("icons/about/2.png", alt: "") %>
                                         </span>
-                                        Our company History
+                                            <%=@abouts.second.heading%>
                                         <span class="sign"></span>
                                     </a>
                                 </h4>
                             </div>
                             <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                                 <div class="panel-body">
-                                    Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consect adipo sci velit, sed quia non numquam eius modi temora incidlabore etum dolore tha magnam aliquam quaerat voluptatem. Ut enim ad minima venia quius nostrum sak exercitationem ullam corporis suscipit. laboriosam, nisi ut aliquid ex ea commodi consequatur
+                                    <%=@abouts.second.text%>
                                 </div>
                             </div>
                         </div> <!--Panel-->
@@ -95,14 +95,14 @@
                                         <span class="icon">
                                             <%= image_tag("icons/about/1.png", alt: "") %>
                                         </span>
-                                        seowave future plan
+                                            <%=@abouts.third.heading%>
                                         <span class="sign"></span>
                                     </a>
                                 </h4>
                             </div>
                             <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
                                 <div class="panel-body">
-                                    Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consect adipo sci velit, sed quia non numquam eius modi temora incidlabore etum dolore tha magnam aliquam quaerat voluptatem. Ut enim ad minima venia quius nostrum sak exercitationem ullam corporis suscipit. laboriosam, nisi ut aliquid ex ea commodi consequatur
+                                    <%=@abouts.third.text%>
                                 </div>
                             </div>
                         </div> <!--Panel-->
@@ -250,58 +250,16 @@
         <div class="container">
             <div class="row">
                 <div class="row m0 title_row">
-                    <h2>Why Clients Love Us</h2>
+                    <h2>Clever Team Members</h2>
                     <h5>voluptatem accusantium doloremque laudantium totam aperiam</h5>
                 </div>
                 <div class="row m0">
-                    <div class="col-sm-6 testimonial">
-                        <div class="media">
-                            <div class="media-left">
-                                <a href="#">
-                                    <%= image_tag("about/clients/c1.jpg", alt: "") %>
-                                </a>
-                            </div>
-                            <div class="media-body">
-                                <div class="inner row m0">
-                                    <div class="blockquote">Laudantium, totam rem aperi, eaque ipsa quaea ab illo invente veritatis et quasi architecto sach beatae vitae dicta sunt explicab.</div>
-                                    <div class="row m0 review">
-                                        <i class="fa fa-star-o starred"></i>
-                                        <i class="fa fa-star-o starred"></i>
-                                        <i class="fa fa-star-o starred"></i>
-                                        <i class="fa fa-star-o"></i>
-                                        <i class="fa fa-star-o"></i>
-                                    </div>
-                                    <div class="row m0 identity">Auro Navanth <span class="pos">(CEO of Clsscio)</span></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 testimonial">
-                        <div class="media">
-                            <div class="media-left">
-                                <a href="#">
-                                    <%= image_tag("about/clients/c2.jpg", alt: "") %>
-                                </a>
-                            </div>
-                            <div class="media-body">
-                                <div class="inner row m0">
-                                    <div class="blockquote">Laudantium, totam rem aperi, eaque ipsa quaea ab illo invente veritatis et quasi architecto sach beatae vitae dicta sunt explicab.</div>
-                                    <div class="row m0 review">
-                                        <i class="fa fa-star-o starred"></i>
-                                        <i class="fa fa-star-o starred"></i>
-                                        <i class="fa fa-star-o starred"></i>
-                                        <i class="fa fa-star-o starred"></i>
-                                        <i class="fa fa-star-o"></i>
-                                    </div>
-                                    <div class="row m0 identity">steaven Amith <span class="pos">(Co founder of Aft)</span></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                    <%= render partial: "layouts/our_team" ,:collection => @teams, :as => :t%>
+               </div>
             </div>
         </div>
     </div>
+
 </section>
     <!--Mailchimp-->
     <script src='../../../../s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>

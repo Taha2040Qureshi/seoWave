@@ -1,8 +1,7 @@
-<<body class="default home">
-    <section class="row">
-    <div class="container">
-
-    <section class="row">
+<body class="default home">
+     <section class="row">
+    <div class="container-fluid">
+        <div class="row">
     <div class="container">
         <div class="row page_services contentRow">
             <div class="row m0 title_row">
@@ -13,144 +12,28 @@
                 </h5>
             </div>
             <div class="row m0">
-                <div class="col-sm-4 service_box">
-                    <div class="row service_box_inner">
-                        <div class="row preview_box">
-                            <%= image_tag("icons/services/1.png", alt: "") %>
-                            <h6>Seo Services</h6>
-                        </div>
-                        <div class="row hover_box">
-                            <div class="row m0 inner">
-                                <h6>Seo Services</h6>
-                                <div class="about"> Duis aute irure dolor in reprehenderit voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.</div>
-                                <a href="services-details.html" class="read_more">Read More</a>
+                <% @services.each do |s|%>
+                    <div class="col-sm-4 service_box">
+                        <div class="row service_box_inner">
+                            <div class="row preview_box">
+                                <%= image_tag(s.avatar.url, alt: "") %>
+                                <h6><%= s.heading%></h6>
+                            </div>
+                            <div class="row hover_box">
+                                <div class="row m0 inner">
+                                    <h6><%= s.heading%></h6>
+                                    <div class="about"><%= s.text%></div>
+                                    <a href="services-details.html" class="read_more">Read More</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-sm-4 service_box">
-                    <div class="row service_box_inner">
-                        <div class="row preview_box">
-                            <%= image_tag("icons/services/8.png", alt: "") %>
-                            <h6>Pay Per Click</h6>
-                        </div>
-                        <div class="row hover_box">
-                            <div class="row m0 inner">
-                                <h6>Seo Services</h6>
-                                <div class="about"> Duis aute irure dolor in reprehenderit voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.</div>
-                                <a href="services-details.html" class="read_more">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4 service_box">
-                    <div class="row service_box_inner">
-                        <div class="row preview_box">
-                            <%= image_tag("icons/services/3.png", alt: "") %>
-                            <h6>Social Media</h6>
-                        </div>
-                        <div class="row hover_box">
-                            <div class="row m0 inner">
-                                <h6>Seo Services</h6>
-                                <div class="about"> Duis aute irure dolor in reprehenderit voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.</div>
-                                <a href="services-details.html" class="read_more">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4 service_box">
-                    <div class="row service_box_inner">
-                        <div class="row preview_box">
-                            <%= image_tag("icons/services/4.png", alt: "") %>
-                            <h6>Web Development</h6>
-                        </div>
-                        <div class="row hover_box">
-                            <div class="row m0 inner">
-                                <h6>Web Development</h6>
-                                <div class="about"> Duis aute irure dolor in reprehenderit voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.</div>
-                                <a href="services-details.html" class="read_more">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4 service_box">
-                    <div class="row service_box_inner">
-                        <div class="row preview_box">
-                            <%= image_tag("icons/services/5.png", alt: "") %>
-                            <h6>Email Marketing</h6>
-                        </div>
-                        <div class="row hover_box">
-                            <div class="row m0 inner">
-                                <h6>Email Marketing</h6>
-                                <div class="about"> Duis aute irure dolor in reprehenderit voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.</div>
-                                <a href="services-details.html" class="read_more">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4 service_box">
-                    <div class="row service_box_inner">
-                        <div class="row preview_box">
-                            <%= image_tag("icons/services/6.png", alt: "") %>
-                            <h6>Content Management</h6>
-                        </div>
-                        <div class="row hover_box">
-                            <div class="row m0 inner">
-                                <h6>Content Management</h6>
-                                <div class="about"> Duis aute irure dolor in reprehenderit voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.</div>
-                                <a href="services-details.html" class="read_more">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4 service_box">
-                    <div class="row service_box_inner">
-                        <div class="row preview_box">
-                            <%= image_tag("icons/services/2.png", alt: "") %>
-                            <h6>Web Analytics</h6>
-                        </div>
-                        <div class="row hover_box">
-                            <div class="row m0 inner">
-                                <h6>Web Analytics</h6>
-                                <div class="about"> Duis aute irure dolor in reprehenderit voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.</div>
-                                <a href="services-details.html" class="read_more">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4 service_box">
-                    <div class="row service_box_inner">
-                        <div class="row preview_box">
-                            <%= image_tag("icons/services/7.png", alt: "") %>
-                            <h6>Virtual Marketing</h6>
-                        </div>
-                        <div class="row hover_box">
-                            <div class="row m0 inner">
-                                <h6>Virtual Marketing</h6>
-                                <div class="about"> Duis aute irure dolor in reprehenderit voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.</div>
-                                <a href="services-details.html" class="read_more">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4 service_box">
-                    <div class="row service_box_inner">
-                        <div class="row preview_box">
-                            <%= image_tag("icons/services/9.png", alt: "") %>
-                            <h6>Web Optimization</h6>
-                        </div>
-                        <div class="row hover_box">
-                            <div class="row m0 inner">
-                                <h6>Web Optimization</h6>
-                                <div class="about"> Duis aute irure dolor in reprehenderit voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.</div>
-                                <a href="services-details.html" class="read_more">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <%end%>
             </div>
         </div>
     </div>
+      </div>
+     </div>
 </section>
 
 <section class="row trial30_banner">
@@ -170,6 +53,7 @@
         </div>
     </div>
 </section>
+
     <!--Mailchimp-->
     <script src='../../../../s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
     <script>

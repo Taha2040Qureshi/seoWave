@@ -1,0 +1,41 @@
+<body class="default home">
+
+   <div class="row m0 testimonials contentRow">
+        <div class="container">
+            <div class="row">
+                <div class="row m0 title_row">
+                    <h2>Clever Team Members</h2>
+                    <h5>voluptatem accusantium doloremque laudantium totam aperiam</h5>
+                </div>
+                <div class="row m0">
+                    <%= render partial: "layouts/our_team" ,:collection => @teams, :as => :t%>
+               </div>
+            </div>
+        </div>
+    </div>
+   <section class="row trial30_banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-10">
+                    <div class="row">
+                        <h2>Contact Us  free trail now!</h2>
+
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="row">
+                        <a href="contact.html" class="borderred_link"><span>contact us</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--Mailchimp-->
+    <script src='../../../../s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+    <script>
+        (function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[1]='FNAME';ftypes[1]='text';fnames[0]='EMAIL';ftypes[0]='email';fnames[2]='MMERGE2';ftypes[2]='url';}(jQuery));var $mcj = jQuery.noConflict(true)
+    </script>
+</body>

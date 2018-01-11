@@ -1,0 +1,17 @@
+<div class="col-sm-6 testimonial">
+    <div class="media">
+        <div class="media-left">
+            <a href="#">
+                <%= image_tag(t.avatar.url, alt: "") %>
+            </a>
+        </div>
+        <div class="media-body">
+            <div class="inner row m0">
+                <div class="blockquote"><%= t.text%></div>
+                <div class="row m0 review"> <i class="fa fa-star-o starred"></i> <i class="fa fa-star-o starred"></i> <i class="fa fa-star-o starred"></i> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> </div>
+                <div class="row m0 identity"><%= t.name%><span class="pos">(<%=t.designation%>)</span></div>
+            </div>
+        </div>
+    </div>
+</div>
+
