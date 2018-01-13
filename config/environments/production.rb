@@ -89,7 +89,7 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 
-  config.action_mailer.default_url_options = { :host => 'seowave.herokuapp.com' }
+  config.action_mailer.default_url_options = { :host => 'techsavvy-web.herokuapp.com' }
 
   # Email Configuration for Gmail
   config.action_mailer.smtp_settings = {
