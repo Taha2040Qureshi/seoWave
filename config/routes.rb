@@ -4,6 +4,8 @@ Rails.application.routes.draw do
 
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
+
+
   get 'contacts/index'
 
   get 'prices/index'
@@ -22,4 +24,6 @@ Rails.application.routes.draw do
               registrations: "users/registrations",
               sessions: "users/sessions"
             }
+
+  resources :contacts
 end
