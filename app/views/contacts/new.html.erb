@@ -9,40 +9,41 @@
                         <h5>Tell us about your project ideas or <span>just say hello.</span></h5>
                     </div>
                     <div class="formArea row m0">
-                           <form action="http://premiumlayers.net/demo/html/seowave/contact_process.php" class="row m0 contact_form" id="contactForm">
+                        <%= form_for @contact, class: "row m0 contact_form", id: "contactForm" do |f| %>
                             <div class="col-sm-6">
                                 <div class="row m0">
-                                    <label for="contact_name">Name <span>*</span></label>
-                                    <input type="text" class="form-control" name="contact_name" id="contact_name" required>
+                                    <%= f.label "First name", for:"contact_name"%><span>*</span>
+                                    <%= f.text_field :first_name,class:"form-control" %>
                                 </div>
-
-
                             </div>
                             <div class="col-sm-6">
                                 <div class="row m0">
-                                    <label for="contact_email">Email <span>*</span></label>
-                                    <input type="email" class="form-control" name="contact_email" id="contact_phone" required>
-                                </div>
-
-
-                            </div>
-                            <div class="col-sm-12">
-                                <div class="row m0">
-                                      <label for="contact_email">Phone <span>*</span></label>
-                                    <input type="email" class="form-control" name="contact_email" id="contact_email" required>
-
+                                    <%= f.label "Last name", for:"last_name"%><span>*</span>
+                                    <%= f.text_field :last_name,class:"form-control"%>
                                 </div>
                             </div>
                             <div class="col-sm-12">
                                 <div class="row m0">
-                                    <label for="addInfos">Additional Information</label>
-                                    <textarea name="addInfos" id="addInfos" class="form-control"></textarea>
+                                    <%= f.label "Email", for:"email"%><span>*</span>
+                                    <%= f.text_field :email, type:"email", class:"form-control",required:"required"%>
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="row m0">
+                                    <%= f.label "Phone", for:"phone"%>
+                                    <%= f.text_field :phone, class:"form-control", required:"required"%>
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="row m0">
+                                    <%= f.label "Additional Information", for:"description"%>
+                                    <%= f.text_area :description, class:"form-control"%><br />
                                 </div>
                             </div>
                             <div class="col-sm-12 text-center">
-                                <button class="borderred_link" type="submit"><span>submit details!</span></button>
+                                <%= f.submit "submit details!", data: { disable_with: "Please wait..." } %>
                             </div>
-                        </form>
+                        <%end%>
                         <div id="success">
                             <span class="green textcenter">
                                 Your message was sent successfully! I will be in touch as soon as I can.

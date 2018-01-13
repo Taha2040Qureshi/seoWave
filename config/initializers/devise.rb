@@ -6,11 +6,11 @@ Devise.setup do |config|
   # confirmation, reset password and unlock tokens in the database.
   # Devise will use the `secret_key_base` as its `secret_key`
   # by default. You can change it below and use your own secret key.
-  
+
   # Only in case you want to run application in prodduction mode on server side
   config.secret_key = ENV['DEVISE_SECRET_KEY'] if Rails.env.production?
-  
-  # Only in case you want to run application in prodution mode on your local maschine 
+
+  # Only in case you want to run application in prodution mode on your local maschine
   # config.secret_key = 'b67ae247114b3ab75485624fbc23c8ff0582ab40a51a5d43efe3f2a9cbb802e9358e3c55f241464acd2a1ba3c33255724a1c006a6eb943ee28628c81d4fdf4c9'
 
 
