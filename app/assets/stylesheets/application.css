@@ -17,7 +17,6 @@
  *= require owl.theme.default.min
  *= require flexslider
  *= require bootstrap-select.min
- *= require googleapis
  *= require settings
  *= require settings-ie8
  *= require style
