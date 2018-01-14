@@ -8,10 +8,10 @@ Devise.setup do |config|
   # by default. You can change it below and use your own secret key.
 
   # Only in case you want to run application in prodduction mode on server side
-  config.secret_key = ENV['DEVISE_SECRET_KEY'] if Rails.env.production?
+  # config.secret_key = ENV['DEVISE_SECRET_KEY'] if Rails.env.production?
 
   # Only in case you want to run application in prodution mode on your local maschine
-  # config.secret_key = 'b67ae247114b3ab75485624fbc23c8ff0582ab40a51a5d43efe3f2a9cbb802e9358e3c55f241464acd2a1ba3c33255724a1c006a6eb943ee28628c81d4fdf4c9'
+  config.secret_key = '533e21771c3414460a1f913b1ec5c854ca4be0e3486ae2897b909917740cd7933006676827a1f72cd2a66592e623912df1df1f2886a049e1c896d6fef9a055d3'
 
 
   # ==> Mailer Configuration
