@@ -3,18 +3,8 @@
   <head>
     <title> Techsavvy | One-Stop Digital Marketing</title>
     <%= csrf_meta_tags %>
-
-    <!--Fonts-->
-    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Cabin:400,500,600,700,400italic,500italic,600italic,700italic' rel='stylesheet' type='text/css'>
-
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-
-<!--     <p class="notice"><%#= notice %></p>
-    <p class="alert"><%#= alert %></p> -->
-
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
   </head>
   <%= render partial: "layouts/header"%>
   <body>
