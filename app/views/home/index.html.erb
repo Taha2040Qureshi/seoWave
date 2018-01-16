@@ -9,479 +9,71 @@
 <section class="home-slider">
     <div class="tp-banner-container">
         <div class="tp-banner">
-            <ul>
-                <!-- Slider 1 -->
-                <li data-transition="fade" data-slotamount="7">
-                    <!-- Layer -->
-                    <div class="tp-caption sft tp-resizeme"
-                         data-x="left"
-                         data-y="120"
-                         data-speed="700"
-                         data-start="700"
-                         data-easing="easeOutBack"
-                         data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-                         data-splitin="none"
-                         data-splitout="none"
-                         data-elementdelay="0.1"
-                         data-endelementdelay="0.1"
-                         data-endspeed="300"
-                         data-captionhidden="on"
-                         style="color: #232323; font-size: 35px; text-transform:uppercase; font-family: 'Montserrat', sans-serif; font-weight: bold;">Let Us Grow your website</div>
+           
 
-                    <!-- Layer -->
-                    <div class="tp-caption sft tp-resizeme"
-                         data-x="left"
-                         data-y="170"
-                         data-speed="700"
-                         data-start="1000"
-                         data-easing="easeOutBack"
-                         data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-                         data-splitin="none"
-                         data-splitout="none"
-                         data-elementdelay="0.1"
-                         data-endelementdelay="0.1"
-                         data-endspeed="300"
-                         data-captionhidden="on"
-                         style="color: #232323; font-size: 45px; text-transform:uppercase; font-family: 'Montserrat', sans-serif; font-weight: bold; border-bottom: 2px solid #e99544;">traffic</div>
+           <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+       <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
 
-                    <!-- Layer -->
-                    <div class="tp-caption sft tp-resizeme"
-                         data-x="left"
-                         data-y="270"
-                         data-speed="700"
-                         data-start="1300"
-                         data-easing="easeOutBack"
-                         data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-                         data-splitin="none"
-                         data-splitout="none"
-                         data-elementdelay="0.1"
-                         data-endelementdelay="0.1"
-                         data-endspeed="300"
-                         data-captionhidden="on"
-                         style="color: #777777; font-size: 14px;  font-family: 'Droid Serif', serif; font-weight: normal; line-height:26px;">
-                        We are on a mission to build, grow and maintain loyal communities at every <br>
-                        touchpoint. This means you can accomplish your business goals through <br>
-                        digital marketing
-                    </div>
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
 
-                    <!-- Layer -->
-                    <div class="tp-caption sft tp-resizeme"
-                         data-x="left"
-                         data-y="380"
-                         data-speed="700"
-                         data-start="1800"
-                         data-easing="easeOutBack"
-                         data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-                         data-splitin="none"
-                         data-splitout="none"
-                         data-elementdelay="0.1"
-                         data-endelementdelay="0.1"
-                         data-endspeed="300"
-                         data-captionhidden="on"
-                         style="z-index: 10;"><a href="#." class="borderred_link">Get in touch</a></div>
+      <div class="item active">
+         <%= image_tag("slider/B2.png", alt: "") %>
+        <div class="carousel-caption">
+          <h3>Los Angeles</h3>
+          <p>LA is always so much fun!</p>
+        </div>
+      </div>
 
-                    <!-- Layer -->
-                    <div class="tp-caption sft tp-resizeme rs-parallaxlevel-4"
-                         data-x="800"
-                         data-y="bottom" data-voffset="-100"
-                         data-speed="700"
-                         data-start="1500"
-                         data-easing="easeOutBack"
-                         data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-                         data-splitin="none"
-                         data-splitout="none"
-                         data-elementdelay="0.1"
-                         data-endelementdelay="0.1"
-                         data-endspeed="300"
-                         data-captionhidden="on"
-                         style="z-index: 2;">
-                         <%= image_tag("slider/mac.png", alt: "") %>
-                     </div>
+      <div class="item">
+          <%= image_tag("slider/B3.png", alt: "") %>
+        <div class="carousel-caption" style="    position: absolute; color:black;    top: -1px;">
+          <h3>Group work make Project Easy</h3>
+          <p>Thank you, Partners</p>
+        </div>
+      </div>
+    
+      <div class="item">
+          <%= image_tag("slider/B1.png", alt: "") %>
+        <div class="carousel-caption" style="position: absolute;
+    left: -472px;
+    bottom: 160px;">
+          <h3>Secure your life with tech</h3>
+          <p style="color:white;">We love the Secure Your Life and Money!</p>
+        </div>
+      </div>
+      <div class="item">
+          <%= image_tag("slider/B4.png", alt: "") %>
+        
+      </div>
+  
+    </div>
 
-                    <!-- Layer -->
-                    <div class="tp-caption sft tp-resizeme rs-parallaxlevel-4"
-                         data-x="500"
-                         data-y="bottom" data-voffset="0"
-                         data-speed="700"
-                         data-start="1300"
-                         data-easing="easeOutBack"
-                         data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-                         data-splitin="none"
-                         data-splitout="none"
-                         data-elementdelay="0.1"
-                         data-endelementdelay="0.1"
-                         data-endspeed="300"
-                         data-captionhidden="on"
-                         style="z-index: 2;">
-                         <%= image_tag("slider/plane.png", alt: "") %>
-                     </div>
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
 
-                    <!-- Layer -->
-                    <div class="tp-caption sft tp-resizeme rs-parallaxlevel-4"
-                         data-x="720"
-                         data-y="160"
-                         data-speed="700"
-                         data-start="1600"
-                         data-easing="easeOutBack"
-                         data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-                         data-splitin="none"
-                         data-splitout="none"
-                         data-elementdelay="0.1"
-                         data-endelementdelay="0.1"
-                         data-endspeed="300"
-                         data-captionhidden="on"
-                         style="z-index: 2;">
-                         <%= image_tag("slider/bosta.png", alt: "") %>
-                     </div>
 
-                    <!-- Layer -->
-                    <div class="tp-caption sft tp-resizeme rs-parallaxlevel-4"
-                         data-x="820"
-                         data-y="160"
-                         data-speed="700"
-                         data-start="1600"
-                         data-easing="easeOutBack"
-                         data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-                         data-splitin="none"
-                         data-splitout="none"
-                         data-elementdelay="0.1"
-                         data-endelementdelay="0.1"
-                         data-endspeed="300"
-                         data-captionhidden="on"
-                         style="z-index: 2;">
-                        <h4>100%</h4>
-                        <p>Grow Your Business</p>
-                    </div>
-
-                    <!-- Layer -->
-                    <div class="tp-caption sft tp-resizeme rs-parallaxlevel-4"
-                         data-x="560"
-                         data-y="300"
-                         data-speed="700"
-                         data-start="1800"
-                         data-easing="easeOutBack"
-                         data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-                         data-splitin="none"
-                         data-splitout="none"
-                         data-elementdelay="0.1"
-                         data-endelementdelay="0.1"
-                         data-endspeed="300"
-                         data-captionhidden="on"
-                         style="z-index: 2;">
-                         <%= image_tag("slider/project-completed.png", alt: "") %>
-
-                     </div>
-
-                    <!-- Layer -->
-                    <div class="tp-caption sft tp-resizeme rs-parallaxlevel-4"
-                         data-x="660"
-                         data-y="300"
-                         data-speed="700"
-                         data-start="1800"
-                         data-easing="easeOutBack"
-                         data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-                         data-splitin="none"
-                         data-splitout="none"
-                         data-elementdelay="0.1"
-                         data-endelementdelay="0.1"
-                         data-endspeed="300"
-                         data-captionhidden="on"
-                         style="z-index: 2;">
-                        <h4>2850+</h4>
-                        <p>Completed Projects</p>
-                    </div>
-
-                    <!-- Layer -->
-                    <div class="tp-caption sft tp-resizeme rs-parallaxlevel-4"
-                         data-x="470"
-                         data-y="490"
-                         data-speed="700"
-                         data-start="2000"
-                         data-easing="easeOutBack"
-                         data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-                         data-splitin="none"
-                         data-splitout="none"
-                         data-elementdelay="0.1"
-                         data-endelementdelay="0.1"
-                         data-endspeed="300"
-                         data-captionhidden="on"
-                         style="z-index: 2;">
-                         <%= image_tag("slider/clients.png", alt: "") %>
-                     </div>
-
-                    <!-- Layer -->
-                    <div class="tp-caption sft tp-resizeme rs-parallaxlevel-4"
-                         data-x="570"
-                         data-y="490"
-                         data-speed="700"
-                         data-start="2000"
-                         data-easing="easeOutBack"
-                         data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-                         data-splitin="none"
-                         data-splitout="none"
-                         data-elementdelay="0.1"
-                         data-endelementdelay="0.1"
-                         data-endspeed="300"
-                         data-captionhidden="on"
-                         style="z-index: 2;">
-                        <h4>4000+</h4>
-                        <p>Satisfied Clients</p>
-                    </div>
-                </li>
-
-                <!-- Slider 1 -->
-                <li data-transition="fade" data-slotamount="7">
-                    <!-- Layer -->
-                    <div class="tp-caption sft tp-resizeme"
-                         data-x="center"
-                         data-y="120"
-                         data-speed="700"
-                         data-start="700"
-                         data-easing="easeOutBack"
-                         data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-                         data-splitin="none"
-                         data-splitout="none"
-                         data-elementdelay="0.1"
-                         data-endelementdelay="0.1"
-                         data-endspeed="300"
-                         data-captionhidden="on"
-                         style="color: #232323; font-size: 30px; text-transform:uppercase; font-family: 'Montserrat', sans-serif; font-weight: bold;">Grow Your Online Business</div>
-
-                    <!-- Layer -->
-                    <div class="tp-caption sft tp-resizeme"
-                         data-x="center"
-                         data-y="170"
-                         data-speed="700"
-                         data-start="900"
-                         data-easing="easeOutBack"
-                         data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-                         data-splitin="none"
-                         data-splitout="none"
-                         data-elementdelay="0.1"
-                         data-endelementdelay="0.1"
-                         data-endspeed="300"
-                         data-captionhidden="on"
-                         style="color: #232323; font-size: 18px;   font-family: 'Droid Serif', serif; font-style:italic; font-weight: normal; ">Through better marketing today</div>
-
-                    <!-- Layer -->
-                    <div class="tp-caption sft tp-resizeme"
-                         data-x="center"
-                         data-y="200"
-                         data-speed="700"
-                         data-start="1100"
-                         data-easing="easeOutBack"
-                         data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-                         data-splitin="none"
-                         data-splitout="none"
-                         data-elementdelay="0.1"
-                         data-endelementdelay="0.1"
-                         data-endspeed="300"
-                         data-captionhidden="on"
-                         style="z-index: 10;"><a href="#." class="borderred_link">purchase now!</a></div>
-
-                    <!-- Layer -->
-                    <div class="tp-caption sft tp-resizeme rs-parallaxlevel-4"
-                         data-x="center"
-                         data-y="bottom"
-                         data-speed="700"
-                         data-start="1500"
-                         data-easing="easeOutBack"
-                         data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-                         data-splitin="none"
-                         data-splitout="none"
-                         data-elementdelay="0.1"
-                         data-endelementdelay="0.1"
-                         data-endspeed="300"
-                         data-captionhidden="on"
-                         style="z-index: 2;">
-                         <%= image_tag("slider/browser.png", alt: "") %>
-                     </div>
-
-                    <!-- Layer -->
-                    <div class="tp-caption sft tp-resizeme rs-parallaxlevel-4"
-                         data-x="center"
-                         data-y="350"
-                         data-speed="700"
-                         data-start="1300"
-                         data-easing="easeOutBack"
-                         data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-                         data-splitin="none"
-                         data-splitout="none"
-                         data-elementdelay="0.1"
-                         data-endelementdelay="0.1"
-                         data-endspeed="300"
-                         data-captionhidden="on"
-                         style="z-index: 2;">
-                         <%= image_tag("slider/bnr-feature.png", alt: "") %>
-                     </div>
-                </li>
-
-                <!-- Slider 2 -->
-                <li data-transition="fade" data-slotamount="7">
-                    <!-- Layer -->
-                    <div class="tp-caption sft tp-resizeme"
-                         data-x="580"
-                         data-y="100"
-                         data-speed="700"
-                         data-start="700"
-                         data-easing="easeOutBack"
-                         data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-                         data-splitin="none"
-                         data-splitout="none"
-                         data-elementdelay="0.1"
-                         data-endelementdelay="0.1"
-                         data-endspeed="300"
-                         data-captionhidden="on"
-                         style="color: #232323; font-size: 30px; text-transform:uppercase; font-family: 'Montserrat', sans-serif; font-weight: bold;">Start Growing Your Business</div>
-
-                    <!-- Layer -->
-                    <div class="tp-caption sft tp-resizeme"
-                         data-x="580"
-                         data-y="150"
-                         data-speed="700"
-                         data-start="900"
-                         data-easing="easeOutBack"
-                         data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-                         data-splitin="none"
-                         data-splitout="none"
-                         data-elementdelay="0.1"
-                         data-endelementdelay="0.1"
-                         data-endspeed="300"
-                         data-captionhidden="on"
-                         style="color: #232323; font-size: 18px;   font-family: 'Droid Serif', serif; font-style:italic; font-weight: normal; ">Through better marketing today</div>
-
-                    <!-- Layer -->
-                    <div class="tp-caption sft tp-resizeme rs-parallaxlevel-4"
-                         data-x="right"
-                         data-y="bottom" data-voffset="50"
-                         data-speed="700"
-                         data-start="1500"
-                         data-easing="easeOutBack"
-                         data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-                         data-splitin="none"
-                         data-splitout="none"
-                         data-elementdelay="0.1"
-                         data-endelementdelay="0.1"
-                         data-endspeed="300"
-                         data-captionhidden="on"
-                         style="z-index: 2;">
-                         <%= image_tag("slider/2-2.png", alt: "") %>
-
-                     </div>
-
-                    <!-- Layer -->
-                    <div class="tp-caption sft tp-resizeme rs-parallaxlevel-4"
-                         data-x="left"
-                         data-y="bottom"
-                         data-speed="700"
-                         data-start="1300"
-                         data-easing="easeOutBack"
-                         data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-                         data-splitin="none"
-                         data-splitout="none"
-                         data-elementdelay="0.1"
-                         data-endelementdelay="0.1"
-                         data-endspeed="300"
-                         data-captionhidden="on"
-                         style="z-index: 2;">
-                         <%= image_tag("slider/2-1.png", alt: "") %>
-                     </div>
-                </li>
-
-                <!-- Slider 3 -->
-                <li data-transition="fade" data-slotamount="7">
-                    <!-- Layer -->
-                    <div class="tp-caption sft tp-resizeme"
-                         data-x="left"
-                         data-y="200"
-                         data-speed="700"
-                         data-start="700"
-                         data-easing="easeOutBack"
-                         data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-                         data-splitin="none"
-                         data-splitout="none"
-                         data-elementdelay="0.1"
-                         data-endelementdelay="0.1"
-                         data-endspeed="300"
-                         data-captionhidden="on"
-                         style="color: #232323; font-size: 30px; text-transform:uppercase; font-family: 'Montserrat', sans-serif; font-weight: bold;">Receive your Free<span class="color-text"> SEO Report,</span></div>
-
-                    <!-- Layer -->
-                    <div class="tp-caption sft tp-resizeme"
-                         data-x="left"
-                         data-y="250"
-                         data-speed="700"
-                         data-start="900"
-                         data-easing="easeOutBack"
-                         data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-                         data-splitin="none"
-                         data-splitout="none"
-                         data-elementdelay="0.1"
-                         data-endelementdelay="0.1"
-                         data-endspeed="300"
-                         data-captionhidden="on"
-                         style="color: #232323; font-size: 30px; text-transform:uppercase; font-family: 'Montserrat', sans-serif; font-weight: bold;">Best Analysis Now.</div>
-
-                    <!-- Layer -->
-                    <div class="tp-caption sft tp-resizeme"
-                         data-x="left"
-                         data-y="300"
-                         data-speed="700"
-                         data-start="1200"
-                         data-easing="easeOutBack"
-                         data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-                         data-splitin="none"
-                         data-splitout="none"
-                         data-elementdelay="0.1"
-                         data-endelementdelay="0.1"
-                         data-endspeed="300"
-                         data-captionhidden="on"
-                         style="color: #232323; font-size: 15px;   font-family: 'Droid Serif', serif; font-weight: normal; ">Enter  your website to see how we can help your business grow...</div>
-
-                    <!-- Layer -->
-                    <div class="tp-caption sft tp-resizeme"
-                         data-x="left"
-                         data-y="350"
-                         data-speed="700"
-                         data-start="1500"
-                         data-easing="easeOutBack"
-                         data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-                         data-splitin="none"
-                         data-splitout="none"
-                         data-elementdelay="0.1"
-                         data-endelementdelay="0.1"
-                         data-endspeed="300"
-                         data-captionhidden="on"
-                         style="z-index: 10;">
-                        <form action="#" class="row m0 website_form caption sft" method="post" data-speed="700" data-start="500" data-easing="easeOutBack">
-                            <div class="input-group">
-                                <input type="url" class="form-control" placeholder="www.YourWebsite.com">
-                                <span class="input-group-addon">
-                                    <button type="submit">Go!</button>
-                                </span>
-                            </div>
-                        </form>
-                    </div>
-
-                    <!-- Layer -->
-                    <div class="tp-caption sft tp-resizeme rs-parallaxlevel-4"
-                         data-x="right"
-                         data-y="center"
-                         data-speed="700"
-                         data-start="1500"
-                         data-easing="easeOutBack"
-                         data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-                         data-splitin="none"
-                         data-splitout="none"
-                         data-elementdelay="0.1"
-                         data-endelementdelay="0.1"
-                         data-endspeed="300"
-                         data-captionhidden="on"
-                         style="z-index: 2;">
-                         <%= image_tag("slider/2-3.png", alt: "") %>
-                     </div>
-                </li>
-            </ul>
+                  
+                      
+                          
+                      
+          
+                       
+            
         </div>
     </div>
 </section>
@@ -553,7 +145,7 @@
                 <div class="col-sm-6">
                     <h2>
                         We Offer a Full Range of Digital <br>
-                        Marketing Services!
+                        !
                     </h2>
                     <p>Consect adipo sci velit, sed quia non numquam eius modi temora incidlabore etum dolore tha magnam aliquam quaerat voluptatem. </p>
                     <ul class="nav">
@@ -577,11 +169,27 @@
                     <div class="row m0"> </div>
                 </div>
                 <div class="col-sm-6">
-                    <div class="owl-carousel offer_service_carousel">
-                       <div class="item"> <%= image_tag("about/2.png", alt: "", ) %></div>
-                       <div class="item"> <%= image_tag("about/1.png", alt: "", ) %></div>
-                       <div class="item"> <%= image_tag("about/2.png", alt: "", ) %></div>
-                       <div class="item"> <%= image_tag("about/1.png", alt: "", ) %></div>
+                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+       
+    <!-- Wrapper for slides -->
+                         <div class="carousel-inner">
+    
+                           <div class="item active">
+                             <%= image_tag("about/2.png", alt: "", ) %>
+                           </div>
+                          <div class="item">
+                          <%= image_tag("about/2.png", alt: "", ) %>
+                           </div>
+    
+                          <div class="item">
+                             <%= image_tag("about/2.jpg", alt: "", ) %>
+                          </div>
+                          <div class="item">
+                            <%= image_tag("about/1.png", alt: "", ) %>
+                          </div>
+  
+                        </div>       
                     </div>
                 </div>
             </div>
@@ -680,7 +288,7 @@
             </div>
         </div>
         <div class="container">
-            <div class="row text-center"> <a href="#" class="borderred_link quote_btn"><span class="lh45">Contact us!</span></a> </div>
+            <div class="row text-center"> <a href="" class="borderred_link quote_btn"><span class="lh45">Contact us!</span></a> </div>
         </div>
     </div>
      <div class="row m0 testimonials contentRow">
