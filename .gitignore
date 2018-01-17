@@ -25,13 +25,8 @@
 # Ignore ruby-gemset
 .ruby-gemset
 
-#gertwert
-Gemfile.lock
-
 # Ignore Byebug command history file.
 .byebug_history
 
 # Ignore Public Uploads from database.
 public/uploads/*
-
-/Gemfile
