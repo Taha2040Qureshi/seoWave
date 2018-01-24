@@ -1,340 +1,296 @@
-<!-- <div id="user_nav">
-  <%# if user_signed_in? %>
-    Signed in as <%#= current_user.email %>. Not you?
-    <%#= link_to "Sign out", destroy_user_session_path, :method => :delete %>
-  <%# else %>
-    <%#= link_to "Sign up", new_user_registration_path %> or <%#= link_to "sign in", new_user_session_path %>
-  <%# end %>
-</div> -->
 <section class="home-slider">
-    <div class="tp-banner-container">
-        <div class="tp-banner">
-
-
-           <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-       <li data-target="#myCarousel" data-slide-to="3"></li>
-    </ol>
-
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner">
-
-      <div class="item active">
-         <%= image_tag("slider/B2.png", alt: "") %>
-        <div class="carousel-caption">
-         
-        </div>
-      </div>
-
-      <div class="item">
-          <%= image_tag("slider/B3.png", alt: "") %>
-        <div class="carousel-caption" style="    position: absolute; color:black;    top: -1px;">
-          <h3>Group work make Project Easy</h3>
-          <p>Thank you, Partners</p>
-        </div>
-      </div>
-
-      <div class="item">
-          <%= image_tag("slider/B1.png", alt: "") %>
-        <div class="carousel-caption" style="position: absolute;
+  <div class="tp-banner-container">
+    <div class="tp-banner">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#myCarousel" data-slide-to="3"></li>
+        </ol>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <%= image_tag("slider/B2.png", alt: "") %>
+            <div class="carousel-caption">
+            </div>
+          </div>
+          <div class="item">
+            <%= image_tag("slider/B3.png", alt: "") %>
+            <div class="carousel-caption" style="    position: absolute; color:black;    top: -1px;">
+              <h3>Group work make Project Easy</h3>
+              <p>Thank you, Partners</p>
+            </div>
+          </div>
+          <div class="item">
+            <%= image_tag("slider/B1.png", alt: "") %>
+            <div class="carousel-caption" style="position: absolute;
     left: -472px;
     bottom: 160px;">
-          <h3>Secure your life with tech</h3>
-          <p style="color:white;">We love the Secure Your Life and Money!</p>
+              <h3>Secure your life with tech</h3>
+              <p style="color:white;">We love the Secure Your Life and Money!</p>
+            </div>
+          </div>
+          <div class="item">
+            <%= image_tag("slider/B4.png", alt: "") %>
+          </div>
         </div>
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span>
+        </a>
       </div>
-      <div class="item">
-          <%= image_tag("slider/B4.png", alt: "") %>
-
-      </div>
-
     </div>
-
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right"></span>
-      <span class="sr-only">Next</span>
-    </a>
   </div>
-
-
-
-
-
-
-
-
-
-        </div>
-    </div>
 </section>
 <section class="row contentRow">
-    <div class="container">
-        <div class="row">
-          <% @goals.each do |g| %>
-            <div class="col-sm-4 feature_cols">
-                <div class="media feature_col">
-                    <div class="media-left">
-                        <a href="#">
-                         <%= image_tag(g.avatar.url, alt: "") %>
-                        </a>
-                    </div>
-                    <div class="media-body">
-                        <h5><%= g.heading%></h5>
-                        <p><%= g.text%></p>
-                        <a href="#" class="learn_more">learn more</a>
-                    </div>
-                </div>
+  <div class="container">
+    <div class="row">
+      <% @goals.each do |g| %>
+        <div class="col-sm-4 feature_cols">
+          <div class="media feature_col">
+            <div class="media-left">
+              <a href="#">
+                <%= image_tag(g.avatar.url, alt: "") %>
+              </a>
             </div>
-          <%end%>
+            <div class="media-body">
+              <h5><%= g.heading%></h5>
+              <p><%= g.text%></p>
+              <a href="#" class="learn_more">learn more</a>
+            </div>
+          </div>
         </div>
+      <%end%>
     </div>
+  </div>
 </section>
 <section class="row">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="media discover_services">
-                <div class="media-left heading_secs col-sm-5 col-md-3">
-                    <h2 class="discover_heading">
-                        Discover <br>
-                        Our Services
-                    </h2>
-                    <h5 class="sub_heading">
-                        In publishing and graphic design, lorem ipsum is a filler text or greeking commonly used to demonstrate the textual .
-                    <p class="about"> Replacing meaningful content with placeholder text allows designers to design the form of the content before the content itself has been produced..</p>
-                    <a href="#" class="subscribe_btn btn">Services</a>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="media discover_services">
+        <div class="media-left heading_secs col-sm-5 col-md-3">
+          <h2 class="discover_heading">
+            Discover <br>
+            Our Services
+          </h2>
+          <h5 class="sub_heading">
+            In publishing and graphic design, lorem ipsum is a filler text or greeking commonly used to demonstrate the textual .
+            <p class="about"> Replacing meaningful content with placeholder text allows designers to design the form of the content before the content itself has been produced..</p>
+            <a href="#" class="subscribe_btn btn">Services</a>
+          </div>
+          <div class="media-body services_secs col-sm-7 col-md-9">
+            <% @services.each do |s| %>
+              <div class="col-sm-4 service_box">
+                <div class="row service_box_inner">
+                  <div class="row preview_box">
+                    <%= image_tag(s.avatar.url, alt: "") %>
+                    <h6><%= s.heading %></h6>
+                  </div>
+                  <div class="row hover_box">
+                    <div class="row m0 inner">
+                      <h6><%= s.heading %></h6>
+                      <div class="about"><%= s.text %></div>
+                      <a href="services-details.html" class="read_more">Read More</a>
+                    </div>
+                  </div>
                 </div>
-                <div class="media-body services_secs col-sm-7 col-md-9">
-                    <% @services.each do |s| %>
-                         <div class="col-sm-4 service_box">
-                             <div class="row service_box_inner">
-                                 <div class="row preview_box">
-                                    <%= image_tag(s.avatar.url, alt: "") %>
-                                     <h6><%= s.heading %></h6>
-                                 </div>
-                                 <div class="row hover_box">
-                                     <div class="row m0 inner">
-                                         <h6><%= s.heading %></h6>
-                                         <div class="about"><%= s.text %></div>
-                                         <a href="services-details.html" class="read_more">Read More</a>
-                                     </div>
-                                 </div>
-                             </div>
-                         </div>
-                    <% end %>
-                </div>
-            </div>
+              </div>
+            <% end %>
+          </div>
         </div>
+      </div>
     </div>
-</section>
-<section class="row">
+  </section>
+  <section class="row">
     <div class="row m0 contentRow offer_service home_page">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6">
-                    <h2>
-                        We Offer a Full Range of Digital <br>
-                        !
-                    </h2>
-                    <p>A variation of the ordinary lorem ipsum text has been used in typesetting since the 1960s or earlier, when it was popularized by advertisements for Letraset transfer sheets. It was introduced to the Information Age in the mid-1980s by Aldus Corporation, which employed it in graphics and wor</p>
-                    <ul class="nav">
-                        <li>
-                            <%= image_tag("icons/about/4.png", alt: "") %>
-                            We deliver Top Secrity.
-                        </li>
-                        <li>
-                            <%= image_tag("icons/about/5.png", alt: "") %>
-                            High customer Satification.
-                        </li>
-                        <li>
-                            <%= image_tag("icons/about/6.png", alt: "") %>
-                            We always return e-mails and calls within one business day.
-                        </li>
-                        <li>
-                            <%= image_tag("icons/about/7.png", alt: "") %>
-                            Afordable pricing MANY PROJECTS.
-                        </li>
-                    </ul>
-                    <div class="row m0"> </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <h2>
+              We Offer a Full Range of Digital <br>
+              !
+            </h2>
+            <p>A variation of the ordinary lorem ipsum text has been used in typesetting since the 1960s or earlier, when it was popularized by advertisements for Letraset transfer sheets. It was introduced to the Information Age in the mid-1980s by Aldus Corporation, which employed it in graphics and wor</p>
+            <ul class="nav">
+              <li>
+                <%= image_tag("icons/about/4.png", alt: "") %>
+                We deliver Top Secrity.
+              </li>
+              <li>
+                <%= image_tag("icons/about/5.png", alt: "") %>
+                High customer Satification.
+              </li>
+              <li>
+                <%= image_tag("icons/about/6.png", alt: "") %>
+                We always return e-mails and calls within one business day.
+              </li>
+              <li>
+                <%= image_tag("icons/about/7.png", alt: "") %>
+                Afordable pricing MANY PROJECTS.
+              </li>
+            </ul>
+            <div class="row m0"> </div>
+          </div>
+          <div class="col-sm-6">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+                <div class="item active">
+                  <%= image_tag("about/2.png", alt: "", ) %>
                 </div>
-                <div class="col-sm-6">
-                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-
-    <!-- Wrapper for slides -->
-                         <div class="carousel-inner">
-
-                           <div class="item active">
-                             <%= image_tag("about/2.png", alt: "", ) %>
-                           </div>
-                          <div class="item">
-                          <%= image_tag("about/2.png", alt: "", ) %>
-                           </div>
-
-                          <div class="item">
-                             <%= image_tag("about/2.jpg", alt: "", ) %>
-                          </div>
-                          <div class="item">
-                            <%= image_tag("about/1.png", alt: "", ) %>
-                          </div>
-
-                        </div>
-                    </div>
+                <div class="item">
+                  <%= image_tag("about/2.png", alt: "", ) %>
                 </div>
+                <div class="item">
+                  <%= image_tag("about/2.jpg", alt: "", ) %>
+                </div>
+                <div class="item">
+                  <%= image_tag("about/1.png", alt: "", ) %>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
     <div class="row m0 funfacts_ab">
-        <div class="container">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-3 fact">
             <div class="row">
-                <div class="col-sm-3 fact">
-                    <div class="row">
-                        <h3><span class="counter">98</span>%</h3>
-                        <h5>Client retention</h5>
-                    </div>
-                </div>
-                <!--Fact-->
-                <div class="col-sm-3 fact">
-                    <div class="row">
-                        <h3><span class="counter">12</span></h3>
-                        <h5>years of service</h5>
-                    </div>
-                </div>
-                <!--Fact-->
-                <div class="col-sm-3 fact">
-                    <div class="row">
-                        <h3><span class="counter">350</span>+</h3>
-                        <h5>professionals</h5>
-                    </div>
-                </div>
-                <!--Fact-->
-                <div class="col-sm-3 fact">
-                    <div class="row">
-                        <h3><span class="counter">4000</span>+</h3>
-                        <h5>satisfied clients</h5>
-                    </div>
-                </div>
-                <!--Fact-->
+              <h3><span class="counter">98</span>%</h3>
+              <h5>Client retention</h5>
             </div>
+          </div>
+          <!--Fact-->
+          <div class="col-sm-3 fact">
+            <div class="row">
+              <h3><span class="counter">12</span></h3>
+              <h5>years of service</h5>
+            </div>
+          </div>
+          <!--Fact-->
+          <div class="col-sm-3 fact">
+            <div class="row">
+              <h3><span class="counter">350</span>+</h3>
+              <h5>professionals</h5>
+            </div>
+          </div>
+          <!--Fact-->
+          <div class="col-sm-3 fact">
+            <div class="row">
+              <h3><span class="counter">4000</span>+</h3>
+              <h5>satisfied clients</h5>
+            </div>
+          </div>
+          <!--Fact-->
         </div>
+      </div>
     </div>
     <div class="row m0 successive_process contentRow">
-        <div class="container">
-            <div class="row title_row">
-                <h2>Affordable  It  Packages</h2>
-                <h5>Choose from affordable IT services packages &amp; get the best results in return</h5>
-            </div>
+      <div class="container">
+        <div class="row title_row">
+          <h2>Affordable  It  Packages</h2>
+          <h5>Choose from affordable IT services packages &amp; get the best results in return</h5>
         </div>
-        <div class="row m0 successive_process_inner">
-            <div class="container">
-                <div class="row">
-                    <div class="fleft process">
-                        <div class="dot_circle row m0">
-                            <div class="icon_circle row m0">
-                                <%= image_tag("process/1.png", alt: "") %>
-
-                            </div>
-                        </div>
-                        <div class="row m0">1. people</div>
-                    </div>
-                    <div class="fleft process">
-                        <div class="dot_circle row m0">
-                            <div class="icon_circle row m0">
-                                <%= image_tag("process/2.png", alt: "") %>
-
-                            </div>
-                        </div>
-                        <div class="row m0">2. objective</div>
-                    </div>
-                    <div class="fleft process">
-                        <div class="dot_circle row m0">
-                            <div class="icon_circle row m0">
-                                <%= image_tag("process/3.png", alt: "") %>
-
-                            </div>
-                        </div>
-                        <div class="row m0">3. strategy</div>
-                    </div>
-                    <div class="fleft process">
-                        <div class="dot_circle row m0">
-                            <div class="icon_circle row m0">
-                                <%= image_tag("process/4.png", alt: "") %>
-
-                            </div>
-                        </div>
-                        <div class="row m0">4. technology</div>
-                    </div>
-                    <div class="fleft process">
-                        <div class="dot_circle row m0">
-                            <div class="icon_circle row m0">
-                                <%= image_tag("process/5.png", alt: "") %>
-
-                            </div>
-                        </div>
-                        <div class="row m0">5. analytics</div>
-                    </div>
+      </div>
+      <div class="row m0 successive_process_inner">
+        <div class="container">
+          <div class="row">
+            <div class="fleft process">
+              <div class="dot_circle row m0">
+                <div class="icon_circle row m0">
+                  <%= image_tag("process/1.png", alt: "") %>
                 </div>
+              </div>
+              <div class="row m0">1. people</div>
             </div>
-        </div>
-        <div class="container">
-            <div class="row text-center"> <a href="" class="borderred_link quote_btn"><span class="lh45">Contact us!</span></a> </div>
-        </div>
-    </div>
-     <div class="row m0 testimonials contentRow">
-        <div class="container">
-            <div class="row">
-                <div class="row m0 title_row">
-                    <h2>Clever Team Members</h2>
-                    <h5>voluptatem accusantium doloremque laudantium totam aperiam</h5>
+            <div class="fleft process">
+              <div class="dot_circle row m0">
+                <div class="icon_circle row m0">
+                  <%= image_tag("process/2.png", alt: "") %>
                 </div>
-                <div class="row m0">
-                    <%= render partial: "layouts/our_team" ,:collection => @teams, :as => :t%>
-               </div>
+              </div>
+              <div class="row m0">2. objective</div>
             </div>
+            <div class="fleft process">
+              <div class="dot_circle row m0">
+                <div class="icon_circle row m0">
+                  <%= image_tag("process/3.png", alt: "") %>
+                </div>
+              </div>
+              <div class="row m0">3. strategy</div>
+            </div>
+            <div class="fleft process">
+              <div class="dot_circle row m0">
+                <div class="icon_circle row m0">
+                  <%= image_tag("process/4.png", alt: "") %>
+                </div>
+              </div>
+              <div class="row m0">4. technology</div>
+            </div>
+            <div class="fleft process">
+              <div class="dot_circle row m0">
+                <div class="icon_circle row m0">
+                  <%= image_tag("process/5.png", alt: "") %>
+                </div>
+              </div>
+              <div class="row m0">5. analytics</div>
+            </div>
+          </div>
         </div>
+      </div>
+      <div class="container">
+        <div class="row text-center"> <a href="" class="borderred_link quote_btn"><span class="lh45">Contact us!</span></a> </div>
+      </div>
     </div>
-
+    <div class="row m0 testimonials contentRow">
+      <div class="container">
+        <div class="row">
+          <div class="row m0 title_row">
+            <h2>Clever Team Members</h2>
+            <h5>voluptatem accusantium doloremque laudantium totam aperiam</h5>
+          </div>
+          <div class="row m0">
+            <%= render partial: "layouts/our_team" ,:collection => @teams, :as => :t%>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="row m0 our_clients">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-3">
-                    <div class="row m0">
-                        <h2>Our Clients</h2>
-                        <p>Eaque ipsa quae ab illo inventore veritati quasi.</p>
-                    </div>
-                </div>
-                <div class="col-sm-9">
-                    <div class="row">
-                        <div class="owl-carousel clients_carousel">
-                           <div class="item"> <%= image_tag("about/clients/1.png", alt: "",) %></div>
-                           <div class="item"> <%= image_tag("about/clients/2.png", alt: "", class:'item') %></div>
-                            <div class="item"><%= image_tag("about/clients/3.png", alt: "", class:"item") %></div>
-                            <div class="item"><%= image_tag("about/clients/4.png", alt: "", class:"item") %></div>
-                            <div class="item"><%= image_tag("about/clients/1.png", alt: "", class:"item") %></div>
-                            <div class="item"><%= image_tag("about/clients/1.png", alt: "", class:"item") %></div>
-                            <div class="item"><%= image_tag("about/clients/2.png", alt: "", class:"item") %></div>
-                            <div class="item"><%= image_tag("about/clients/3.png", alt: "", class:"item") %></div>
-                            <div class="item"><%= image_tag("about/clients/4.png", alt: "", class:"item") %></div>
-                            <div class="item"><%= image_tag("about/clients/1.png", alt: "", class:"item") %></div>
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="row m0">
+              <h2>Our Clients</h2>
+              <p>Eaque ipsa quae ab illo inventore veritati quasi.</p>
             </div>
+          </div>
+          <div class="col-sm-9">
+            <div class="row">
+              <div class="owl-carousel clients_carousel">
+                <div class="item"> <%= image_tag("about/clients/1.png", alt: "",) %></div>
+                <div class="item"> <%= image_tag("about/clients/2.png", alt: "", class:'item') %></div>
+                <div class="item"><%= image_tag("about/clients/3.png", alt: "", class:"item") %></div>
+                <div class="item"><%= image_tag("about/clients/4.png", alt: "", class:"item") %></div>
+                <div class="item"><%= image_tag("about/clients/1.png", alt: "", class:"item") %></div>
+                <div class="item"><%= image_tag("about/clients/1.png", alt: "", class:"item") %></div>
+                <div class="item"><%= image_tag("about/clients/2.png", alt: "", class:"item") %></div>
+                <div class="item"><%= image_tag("about/clients/3.png", alt: "", class:"item") %></div>
+                <div class="item"><%= image_tag("about/clients/4.png", alt: "", class:"item") %></div>
+                <div class="item"><%= image_tag("about/clients/1.png", alt: "", class:"item") %></div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-</section>
-
-
-</body>
-
-
-
-
+  </section>
