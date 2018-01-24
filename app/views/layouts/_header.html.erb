@@ -1,77 +1,83 @@
 </head>
 <body class="default home">
- <header class="row">
-  <div class="top_row row m0">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-6 tagLine"> <i class="fa fa-smile-o"></i> Connect Us Enjoy  Tech servises  </div>
-        <div class="col-sm-6">
-          <ul class="nav navbar-right">
-             <li><a href="single-post.html"><img src="images/icons/top-bar/user.png" alt="">login / Register</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--Top Row-->
-  <div class="logo_row row m0">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-6">
-          <a href="#" class="logo" style="overflow: hidden; ">
-            
-            <%= image_tag("Logo-Black.png",alt: "SeoWave | One-Stop Digital Marketing" ) %>
-          </a>
-        </div>
-        <div class="col-sm-6">
-          <ul class="nav">
-            <li><a href="#"><span class="icon phone"></span><span class="first-word">Call</span>: 042-35773886</a></li>
-            <li><a href="mailto:example@domail.com"><span class="icon email"></span><span class="first-word">Email</span>: Info@techsavvy-global.com</a></li>
-            <li><a href="#"><span class="icon share"></span></a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    </div>
-  <!--Logo Row-->
-    <nav class="row menu_row m0">
-            <div class="container">
-                <div class="row">
-                    <div class="search_form_area fright">
-                        <form action="#" class="col-sm-6 search_form p0" method="get">
-
-                        </form>
-
-                    </div>
-                    <!--Search And Analysis-->
-                    <div class="fleft menu_area">
-                        <button class="btn btn-primary visible-xs" type="button" data-toggle="collapse" data-target="#mainMenu" aria-expanded="false" aria-controls="mainMenu"> <i class="glyphicon glyphicon-th-large"></i> Menu </button>
-                        <div class="collapse navbar-collapse" id="mainMenu">
-                            <ul class="nav navbar-nav">
-                                <li class=" dropdown">
-                                  <%= link_to "home", root_path%>
-                                </li>
-                                <li >
-                                  <%= link_to "About Us", abouts_index_path%>
-                                </li>
-                                <li class="dropdown">
-                                  <%= link_to "services", services_index_path%>
-                                </li>
-                                <li class="dropdown">
-                                  <%= link_to "Partners", packages_index_path%>
-                                </li>
-                                <li>
-                                  <%= link_to "Team", teams_index_path%>
-                                </li>
-                                <li class="dropdown">
-                                  <%= link_to "Contact Us", new_contact_path%>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!--Menu Area-->
+  <header class="row">
+    <div class="top_row row m0">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 tagLine"> <i class="fa fa-smile-o"></i> Connect Us Enjoy  Tech servises  </div>
+          <div class="col-sm-6">
+            <ul class="nav navbar-right">
+              <li>
+                <div id="user_nav">
+                  <% if user_signed_in? %>
+                    Signed in as <%= current_user.email %>. Not you?
+                    <%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
+                  <% else %>
+                    <%= link_to "Login", new_user_session_path %>/<%= link_to "Register", new_user_registration_path %>
+                  <% end %>
                 </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Top Row-->
+    <div class="logo_row row m0">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <a href="#" class="logo" style="overflow: hidden; ">
+              <%= image_tag("Logo-Black.png",alt: "SeoWave | One-Stop Digital Marketing" ) %>
+            </a>
+          </div>
+          <div class="col-sm-6">
+            <ul class="nav">
+              <li><a href="#"><span class="icon phone"></span><span class="first-word">Call</span>: 042-35773886</a></li>
+              <li><a href="mailto:example@domail.com"><span class="icon email"></span><span class="first-word">Email</span>: Info@techsavvy-global.com</a></li>
+              <li><a href="#"><span class="icon share"></span></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Logo Row-->
+    <nav class="row menu_row m0">
+      <div class="container">
+        <div class="row">
+          <div class="search_form_area fright">
+            <form action="#" class="col-sm-6 search_form p0" method="get">
+            </form>
+          </div>
+          <!--Search And Analysis-->
+          <div class="fleft menu_area">
+            <button class="btn btn-primary visible-xs" type="button" data-toggle="collapse" data-target="#mainMenu" aria-expanded="false" aria-controls="mainMenu"> <i class="glyphicon glyphicon-th-large"></i> Menu </button>
+            <div class="collapse navbar-collapse" id="mainMenu">
+              <ul class="nav navbar-nav">
+                <li class=" dropdown">
+                  <%= link_to "home", root_path%>
+                </li>
+                <li >
+                  <%= link_to "About Us", abouts_index_path%>
+                </li>
+                <li class="dropdown">
+                  <%= link_to "services", services_index_path%>
+                </li>
+                <li class="dropdown">
+                  <%= link_to "Partners", packages_index_path%>
+                </li>
+                <li>
+                  <%= link_to "Team", teams_index_path%>
+                </li>
+                <li class="dropdown">
+                  <%= link_to "Contact Us", new_contact_path%>
+                </li>
+              </ul>
             </div>
-        </nav>
-<!--Menu Row-->
-</header>
+          </div>
+          <!--Menu Area-->
+        </div>
+      </div>
+    </nav>
+    <!--Menu Row-->
+  </header>
