@@ -2,6 +2,9 @@ class Users::RegistrationsController < Devise::RegistrationsController
   # before_action :configure_sign_up_params, only: [:create]
   # before_action :configure_account_update_params, only: [:update]
 
+  layout false
+  after_action :email_after_create, only: [:create]
+
   # GET /resource/sign_up
   # def new
   #   super
@@ -36,6 +39,12 @@ class Users::RegistrationsController < Devise::RegistrationsController
   #   super
   # end
 
+
+  def email_after_create
+    if @user.valid?
+      UserMailer.send_email_on_user_creation.deliver_later
+    end
+  end
   # protected
 
   # If you have extra params to permit, append them to the sanitizer.
