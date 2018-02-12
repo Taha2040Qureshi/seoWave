@@ -6,9 +6,6 @@ class ContactsController < ApplicationController
   end
   def create
     @contact = Contact.new(contact_params)
-    # if @contact.save
-    #   ContactsMailer.send_email_on_contact_creation(@contact).deliver_later
-    # end
     redirect_to root_path
   end
   private
