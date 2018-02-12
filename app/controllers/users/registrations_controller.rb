@@ -42,7 +42,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
 
   def email_after_create
     if @user.valid?
-      UserMailer.send_email_on_user_creation.deliver_later
+      UserMailer.send_email_on_user_creation(@user).deliver_later
     end
   end
   # protected

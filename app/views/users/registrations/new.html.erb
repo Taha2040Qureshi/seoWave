@@ -4542,6 +4542,10 @@
                   <%= f.label :password_confirmation, "Please confirm your password",class:"youpasswd", data: {icon: "p"} %><br />
                   <%= f.password_field :password_confirmation, autocomplete: "off",required: "required",  type: "password", placeholder: "eg. X8df!90EO" %>
                 </div>
+                <div class="field">
+                  <%= f.label :attachment, "Upload your idea", data: {icon: "I"} %><br />
+                  <%= f.file_field :attachment %>
+                </div>
                 <p class="signin button">
                   <%= f.submit "Sign up" %>
                 </p>
