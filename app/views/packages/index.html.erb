@@ -1,168 +1,186 @@
+<style>
+  .dela {
+  
+       border-bottom: 6px solid red;
+       border-top: 6px solid red;
+      position: relative;
+      -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
+      -webkit-animation-delay: 1s; /* Safari 4.0 - 8.0 */
+      animation: mymove 5s infinite;
+      animation-delay: 1s;
+  
+  }
+  img{
+           border-radius: 50%;
+  }
+  .rotate {
+      border-radius: 50%;
+      transition: all 0.5s ease-in-out;
+  
+  }
+  .rotate:hover{
+      opacity: 1;
+      transform: rotate(360deg);
+  }
+  
+  @keyframes mymove {
+      from {left : 0px; border-bottom:6px solid black; border-top:6px solid black;}
+      to {  left:10px;  border-bottom: 6px solid gray;  border-top: 6px solid gray;}
+  }
+</style>
 <body class="default home">
-      <section class="row">
-        <div class="container">
-            <div class="row page_packages contentRow">
-                <div class="row m0 title_row">
-                    <h2>Our Partners</h2>
-                    <h5>Choose from  Products &amp; get the best results </h5>
-                </div>
-                <div class="row m0 packages">
-                    <div class="col-sm-6 package">
-                        <div class="row inner">
-                            <div class="col-sm-6"> <%= image_tag("packages/cisco.png", alt: "") %>
-                            </div>
-                            <div class="col-sm-6">
-                                <h4 class="package_title">Cisco</h4>
-
-                                                            </div>
-                        </div>
-                    </div>
-                     <div class="col-sm-6 package">
-                        <div class="row inner">
-                            <div class="col-sm-6">
- <%= image_tag("packages/Dell.png", alt: "") %>
-                                </div>
-                            <div class="col-sm-6">
-                                <h4 class="package_title">Dell</h4>
-
-                                                            </div>
-                        </div>
-                    </div>
-                     <div class="col-sm-6 package">
-                        <div class="row inner">
-                            <div class="col-sm-6">
-
- <%= image_tag("packages/hp.png", alt: "") %>
-                              </div>
-                            <div class="col-sm-6">
-                                <h4 class="package_title">Hp</h4>
-
-                                                            </div>
-                        </div>
-                    </div>
-                     <div class="col-sm-6 package">
-                        <div class="row inner">
-                            <div class="col-sm-6" >  
- <%= image_tag("packages/Lenovo.png", alt: "") %>
-                              </div>
-                            <div class="col-sm-6">
-                                <h4 class="package_title">Lenovo</h4>
-
-                                                            </div>
-                        </div>
-                    </div>
-                     <div class="col-sm-6 package">
-                        <div class="row inner">
-                            <div class="col-sm-6">
-
- <%= image_tag("packages/Microsoft.png", alt: "") %>
- 
-                                </div>
-                            <div class="col-sm-6">
-                                <h4 class="package_title">Microsoft</h4>
-
-                                                            </div>
-                        </div>
-                    </div>
-                     <div class="col-sm-6 package">
-                        <div class="row inner">
-                            <div class="col-sm-6">
-
- <%= image_tag("packages/3M.png", alt: "") %>
- 
-                               </div>
-                            <div class="col-sm-6">
-                                <h4 class="package_title">3M</h4>
-
-                                                            </div>
-                        </div>
-                    </div>
-                     <div class="col-sm-6 package">
-                        <div class="row inner">
-                            <div class="col-sm-6">
-
- <%= image_tag("packages/oracle.png", alt: "") %>
- 
-                                </div>
-                            <div class="col-sm-6">
-                                <h4 class="package_title">Oracle</h4>
-
-                                                            </div>
-                        </div>
-                    </div>
-                     <div class="col-sm-6 package">
-                        <div class="row inner">
-                            <div class="col-sm-6">
-
-
-
-
- <%= image_tag("packages/Xclaim.png", alt: "") %>
- 
-                                </div>
-                            <div class="col-sm-6">
-                                <h4 class="package_title">Xclaim</h4>
-
-                                                            </div>
-                        </div>
-                    </div>
-                     <div class="col-sm-6 package">
-                        <div class="row inner">
-                            <div class="col-sm-6">
-
-
- <%= image_tag("packages/vm.png", alt: "") %>
- 
-                                </div>
-                            <div class="col-sm-6">
-                                <h4 class="package_title">Virtual Machine</h4>
-
-                                                            </div>
-                        </div>
-                    </div>
-                     <div class="col-sm-6 package">
-                        <div class="row inner">
-                            <div class="col-sm-6">
-
- <%= image_tag("packages/Ruckus.png", alt: "") %>
- 
-                               </div>
-                            <div class="col-sm-6">
-                                <h4 class="package_title">Ruckus</h4>
-
-                                                            </div>
-                        </div>
-                    </div>
-                    <!--packages-->
-
-
-                </div>
-            </div>
+  <section class="row">
+    <div class="container">
+      <div class="row page_packages contentRow">
+        <div class="row m0 title_row">
+          <h2>Our Partners</h2>
+          <h5>Choose from  Products &amp; get the best results </h5>
         </div>
-    </section>
-
-    <section class="row trial30_banner">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-10">
-                    <div class="row">
-                        <h2>Contact Us  free trail now!</h2>
-
-                    </div>
-                </div>
-                <div class="col-sm-2">
-                    <div class="row">
-                        <a href="contact.html" class="borderred_link"><span>contact us</span></a>
-                    </div>
-                </div>
+        <div class="row m0 packages">
+          <div class="col-sm-6 package ">
+            <div class="row inner dela rotate">
+              <div class="col-sm-6"style="postion: relative;">
+                <div class="rotate"><%= image_tag("packages/cisco.png", alt: "") %></div>
+              </div>
+              <div class="col-sm-6">
+                <h4 class="package_title">Cisco</h4>
+                <P> Life is good with cisco  </P>
+              </div>
             </div>
+          </div>
+          <div class="col-sm-6 package ">
+            <div class="row inner dela  rotate">
+              <div class="col-sm-6">
+                <div class="rotate">
+                  <div class="rotate">
+                    <%= image_tag("packages/Dell.png", alt: "") %>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <h4 class="package_title">Dell</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 package">
+            <div class="row inner dela  rotate">
+              <div class="col-sm-6">
+                <div class="rotate">
+                  <%= image_tag("packages/hp.png", alt: "") %>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <h4 class="package_title">Hp</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 package">
+            <div class="row inner dela  rotate">
+              <div class="col-sm-6" >
+                <div class="rotate">
+                  <%= image_tag("packages/Lenovo.png", alt: "") %>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <h4 class="package_title">Lenovo</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 package">
+            <div class="row inner dela  rotate">
+              <div class="col-sm-6">
+                <div class="rotate">
+                  <%= image_tag("packages/Microsoft.png", alt: "") %>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <h4 class="package_title">Microsoft</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 package">
+            <div class="row inner dela  rotate">
+              <div class="col-sm-6">
+                <div class="rotate">
+                  <%= image_tag("packages/3M.png", alt: "") %></div>
+              </div>
+              <div class="col-sm-6">
+                <h4 class="package_title">3M</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 package">
+            <div class="row inner dela  rotate">
+              <div class="col-sm-6">
+                <div class="rotate">
+                  <%= image_tag("packages/oracle.png", alt: "") %>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <h4 class="package_title">Oracle</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 package">
+            <div class="row inner dela  rotate">
+              <div class="col-sm-6">
+                <div class="rotate">
+                  <%= image_tag("packages/Xclaim.png", alt: "") %>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <h4 class="package_title">Xclaim</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 package">
+            <div class="row inner dela  rotate">
+              <div class="col-sm-6">
+                <div class="rotate">
+                  <%= image_tag("packages/vm.png", alt: "") %>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <h4 class="package_title">Virtual Machine</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 package">
+            <div class="row inner dela  rotate">
+              <div class="col-sm-6">
+                <div class="rotate">
+                  <%= image_tag("packages/Ruckus.png", alt: "") %>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <h4 class="package_title">Ruckus</h4>
+              </div>
+            </div>
+          </div>
+          <!--packages-->
         </div>
-    </section>
-
-
-    <!--Mailchimp-->
-    <script src='../../../../s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
-    <script>
-        (function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[1]='FNAME';ftypes[1]='text';fnames[0]='EMAIL';ftypes[0]='email';fnames[2]='MMERGE2';ftypes[2]='url';}(jQuery));var $mcj = jQuery.noConflict(true)
-    </script>
+      </div>
+    </div>
+  </section>
+  <section class="row trial30_banner">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-10">
+          <div class="row">
+            <h2>Contact Us  free trail now!</h2>
+          </div>
+        </div>
+        <div class="col-sm-2">
+          <div class="row">
+            <a href="contact.html" class="borderred_link"><span>contact us</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Mailchimp-->
+  <script src='../../../../s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+  <script>
+    (function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[1]='FNAME';ftypes[1]='text';fnames[0]='EMAIL';ftypes[0]='email';fnames[2]='MMERGE2';ftypes[2]='url';}(jQuery));var $mcj = jQuery.noConflict(true)
+  </script>
 </body>
